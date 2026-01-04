@@ -503,21 +503,60 @@ h3.section-title::before {
   border-color: transparent !important;
 }
 
-/* PDF Download Button */
-#pdf-download-btn {
+/* Fixed Controls Container */
+.fixed-controls {
   position: fixed !important;
   top: 25px !important;
   right: 25px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+  z-index: 2147483647 !important;
+}
+
+/* Language Switcher */
+.lang-switch {
+  display: flex;
+  background: white;
+  border-radius: 30px;
+  padding: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: 700;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.lang-btn.active {
+  background: var(--accent-gradient);
+  color: white;
+  box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+}
+
+.lang-btn:hover:not(.active) {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+/* PDF Download Button */
+#pdf-download-btn {
   background: var(--accent-gradient) !important;
   color: white !important;
   border: none !important;
-  width: 56px !important;
-  height: 56px !important;
+  width: 50px !important;
+  height: 50px !important;
   border-radius: 50% !important;
-  font-size: 22px !important;
+  font-size: 20px !important;
   cursor: pointer !important;
   box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4) !important;
-  z-index: 2147483647 !important;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
@@ -527,6 +566,28 @@ h3.section-title::before {
 #pdf-download-btn:hover {
   transform: scale(1.1) rotate(5deg) !important;
   box-shadow: 0 12px 35px rgba(59, 130, 246, 0.5) !important;
+}
+
+/* ATS CV Download Button */
+#ats-download-btn {
+  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%) !important;
+  color: white !important;
+  border: none !important;
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 50% !important;
+  font-size: 22px !important;
+  cursor: pointer !important;
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transition: all 0.3s ease !important;
+}
+
+#ats-download-btn:hover {
+  transform: scale(1.1) rotate(-5deg) !important;
+  box-shadow: 0 12px 35px rgba(16, 185, 129, 0.5) !important;
 }
 
 /* Responsive Design */
@@ -575,12 +636,30 @@ h3.section-title::before {
     align-items: flex-start;
     gap: 10px;
   }
+
+  .fixed-controls {
+    top: 15px !important;
+    right: 15px !important;
+    gap: 10px !important;
+  }
+
+  #pdf-download-btn {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 16px !important;
+  }
+
+  .lang-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
 }
 
 /* Print Optimization - Flat Colors for PDF */
 @media print {
   @page {
-    margin: 0;
+    margin: 10mm;
+    /* Standard margin for clean printing */
     size: auto;
   }
 
@@ -589,7 +668,22 @@ h3.section-title::before {
     print-color-adjust: exact !important;
     background: white !important;
     padding: 0 !important;
-    font-size: 9.5pt;
+    font-size: 10pt;
+    /* Slightly larger for better readability */
+  }
+
+  /* Completely Hide Interactive Elements & Controls */
+  .fixed-controls,
+  .lang-switch,
+  .download-buttons,
+  #pdf-download-btn,
+  #ats-download-btn {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
   }
 
   .container {
@@ -602,14 +696,29 @@ h3.section-title::before {
     border-radius: 0;
   }
 
-  /* Header - Flat Dark Blue */
+  /* Header - Professional ATS Style */
   header,
   header.header-centered {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
     background: #0f3460 !important;
     border-radius: 0;
-    padding: 30px 20px;
+    padding: 20px 30px !important;
+    /* Balanced padding */
+    margin-bottom: 20px;
+    text-align: left !important;
+    /* Left align for professional look */
+    align-items: flex-start !important;
+  }
+
+  header.header-centered .header-left {
+    text-align: left !important;
+    margin-bottom: 10px !important;
+  }
+
+  header.header-centered .header-right {
+    text-align: left !important;
+    align-items: flex-start !important;
   }
 
   header.header-centered::before,
@@ -622,43 +731,100 @@ h3.section-title::before {
     -webkit-text-fill-color: white !important;
     color: white !important;
     text-shadow: none !important;
+    font-size: 24pt !important;
+    margin: 0 0 5px 0 !important;
   }
 
   header.header-centered .header-left h2 {
     background: none !important;
-    -webkit-text-fill-color: #60a5fa !important;
-    color: #60a5fa !important;
+    -webkit-text-fill-color: #93c5fd !important;
+    /* Lighter blue for contrast */
+    color: #93c5fd !important;
+    font-size: 12pt !important;
+    letter-spacing: 1px !important;
+    margin: 0 !important;
   }
 
   .header-right a {
-    background: rgba(255, 255, 255, 0.15) !important;
-    border-color: rgba(255, 255, 255, 0.2) !important;
+    background: none !important;
+    border: none !important;
     color: white !important;
+    padding: 0 !important;
+    margin: 0 15px 5px 0 !important;
+    display: inline-flex !important;
+  }
+
+  .contact-row {
+    justify-content: flex-start !important;
+    gap: 15px !important;
+    margin-top: 10px !important;
+  }
+
+  .social-row {
+    justify-content: flex-start !important;
+    gap: 15px !important;
+    margin-top: 5px !important;
   }
 
   .header-right i {
-    color: #60a5fa !important;
+    color: #93c5fd !important;
   }
 
-  /* Summary - Flat Light Blue */
+  /* GLOBAL CONTENT PADDING - FIX FOR LEFT ALIGNMENT */
+  .summary,
+  .job-item,
+  .skills,
+  .education,
+  .languages {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  /* Summary - Clean Layout */
   .summary {
-    background: #dbeafe !important;
+    background: white !important;
+    border-bottom: 1px solid #e2e8f0;
+    padding-top: 0 !important;
+    padding-bottom: 20px !important;
+    margin: 0 0 20px 0 !important;
+  }
+
+  .summary p {
+    text-align: justify;
   }
 
   .summary strong {
-    color: #1e40af !important;
+    color: #0f3460 !important;
   }
 
   /* Section Titles */
-  h3.section-title::before {
-    background: #3b82f6 !important;
+  h3.section-title {
+    font-size: 11pt !important;
+    margin-top: 5px !important;
+    margin-bottom: 15px !important;
+    padding-left: 30px !important;
+    /* Visual alignment with content */
+    color: #0f3460 !important;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 5px;
+    margin-right: 30px !important;
   }
 
-  /* Job Items - Flat Background */
+  h3.section-title::before {
+    background: #0f3460 !important;
+    height: 100% !important;
+    width: 5px !important;
+  }
+
+  /* Job Items - Clean List Style */
   .job-item {
-    background: #f8fafc !important;
+    background: white !important;
     box-shadow: none !important;
-    border: 1px solid #e2e8f0 !important;
+    border: none !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    margin-bottom: 10px !important;
   }
 
   .job-item::before {
@@ -669,30 +835,42 @@ h3.section-title::before {
     transform: none !important;
   }
 
-  .job-details li::before {
-    background: #3b82f6 !important;
+  .job-header {
+    margin-bottom: 8px !important;
   }
 
-  /* Skill Tags - Flat Style */
+  .job-title {
+    color: #000 !important;
+    font-size: 11pt !important;
+  }
+
+  .job-details li::before {
+    background: #0f3460 !important;
+  }
+
+  /* Skill Tags - Minimalist */
   .skill-tag {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
-    background: #eff6ff !important;
+    background: white !important;
     box-shadow: none !important;
-    border: 1px solid #bfdbfe !important;
-    color: #1e3a5f !important;
+    border: 1px solid #cbd5e1 !important;
+    color: #0f3460 !important;
+    font-weight: 600 !important;
+    padding: 2px 8px !important;
   }
 
-  .skill-tag:hover {
-    transform: none !important;
-    background: #eff6ff !important;
-    color: #1e3a5f !important;
-  }
-
-  /* Education Items - Flat Background */
+  /* Education Items */
   .education-item {
-    background: #f8fafc !important;
-    border: 1px solid #e2e8f0 !important;
+    background: white !important;
+    border: none !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    padding: 10px 30px !important;
+    margin: 0 !important;
+  }
+
+  .education-item:last-child {
+    border-bottom: none !important;
   }
 
   .education-item:hover {
@@ -702,43 +880,48 @@ h3.section-title::before {
   /* Languages */
   .languages .skills-grid .skill-tag {
     background: white !important;
-    border: 1px solid #3b82f6 !important;
-  }
-
-  /* Hide PDF Button */
-  #pdf-download-btn {
-    display: none !important;
+    border: 1px solid #cbd5e1 !important;
   }
 
   /* Links */
   a {
-    color: #3b82f6 !important;
+    color: #0f3460 !important;
     text-decoration: none !important;
   }
 
-  /* Page Layout */
+  /* Page Layout & Flow */
   html,
   body {
     height: auto !important;
-    overflow: hidden !important;
+    overflow: visible !important;
   }
 
   section {
-    padding: 20px;
-    page-break-inside: avoid;
-    break-inside: avoid;
+    padding: 0 !important;
+    margin-bottom: 25px !important;
+    border: none !important;
+    break-inside: auto !important;
   }
 
+  /* Prevent titles from being left alone at bottom of page */
   h1,
   h2,
-  h3 {
-    page-break-after: avoid;
-    break-after: avoid;
+  h3,
+  h3.section-title {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
   }
 
+  /* Smart Page Breaks */
   .education-item,
   .job-item {
-    page-break-inside: avoid;
-    break-inside: avoid;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Hide empty blue chips in education */
+  .grad-date {
+    background: none !important;
+    display: none !important;
   }
 }

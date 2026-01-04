@@ -1,49 +1,58 @@
-# Musa Sahin - Interactive Developer CV
+# Zekai Demir - Interactive CV Website
 
-This is a personal CV/Resume website built with HTML, CSS, and JavaScript. It features a modern, responsive design and a **high-fidelity native PDF generation** capability.
+This is a professional CV/Resume website for **Zekai Demir**, a Senior Flutter Developer. It features a modern, responsive design, multi-language support (Turkish/English), and high-fidelity native PDF generation.
 
-## Features
+## 🌟 Features
 
-- **Responsive Design:** Optimized for desktop, tablet, and mobile viewing.
-- **Premium UI:** Custom styled header, clean typography (Inter font), and categorized skills section.
-- **Native PDF Generation:** A "Download PDF" button that leverages the browser's native print engine (`window.print()`) with dynamic CSS injection. This ensures:
-  - **Vector Quality:** Text is selectable and crystal clear.
-  - **Single Page Layout:** Automatically calculates content height to prevent awkward page breaks.
-  - **Optimized Print Styles:** Removes shadows and adjusts colors specifically for print/PDF export.
-- **Dynamic Filename:** Automatically renames the document title to include the current date (e.g., `Musa_Sahin_CV_YYYY-MM-DD`) during the print dialog.
-- **ATS Friendly:** Semantic HTML structure.
-- **Favicon:** Custom tab icon included.
+-   **Multi-language Support (TR/EN):** Seamlessly switch between Turkish and English with a single click. State is managed via vanilla JavaScript.
+-   **Responsive Design:** Fully optimized for desktop, tablet, and mobile viewing.
+-   **Premium UI:** Custom styled header with glassmorphism effects, clean typography (Inter font), and modern skill tags.
+-   **Native PDF Generation:** A smart "Download PDF" button that:
+    -   Hides interactive elements (buttons, toggles) automatically.
+    -   Optimizes colors for print (Black/White text, removal of gradients).
+    -   Prevents awkward page breaks in the middle of content blocks.
+    -   Generates a clean, ATS-friendly document.
+-   **SEO Optimized:** Includes JSON-LD (Person & WebPage Schema) for better search engine visibility and LLM understanding.
+-   **ATS Friendly:** Semantic HTML structure ensures Applicant Tracking Systems can parse the content effectively.
 
-## Structure
+## 🛠 Tech Stack
 
-- `index.html`: Main content, layout structure, and the **dynamic PDF generation logic** (embedded JavaScript).
-- `style.css`: All styling, including the custom "Header Centered" premium theme and detailed `@media print` rules.
-- `favicon.png`: Browser tab icon.
+-   **HTML5:** Semantic markup.
+-   **CSS3:** Custom properties (variables), Flexbox/Grid, and `@media print` modifications.
+-   **JavaScript:** Vanilla JS for language switching and DOM manipulation.
+-   **Icons:** Font Awesome 6.
 
-## How to Edit
+## 📂 Project Structure
 
-1. **Content:** Open `index.html` to update your personal information, experience, or education.
-2. **Styles:** Edit `style.css` to change colors, fonts, or spacing.
-3. **PDF Logic:** The PDF generation logic is located at the bottom of `index.html`. It dynamically creates a `<style>` tag to match the print paper size to the content's exact dimensions.
+-   `index.html`: Main content containing all translations and logic.
+-   `style.css`: All styling, including the custom "Blue Theme" and specific `@media print` rules.
+-   `README.md`: Project documentation.
 
 ## 🚀 Deployment (GitHub Pages)
 
-To publish at [https://musahinist.github.io](https://musahinist.github.io):
+This project is configured to be deployed on GitHub Pages.
 
-1.  **Repository Name:** Create a new repository named **`musahinist.github.io`**.
+**Live URL:** [https://demirzekk.github.io](https://demirzekk.github.io)
+
+### Deployment Steps:
+
+1.  **Repository Name:** The repository is named `Demirzekk.github.io`.
 2.  **Push Code:**
     ```bash
     git init
     git add .
     git commit -m "Initial commit"
     git branch -M main
-    # Remote URL for your user repository
-    git remote add origin https://github.com/musahinist/musahinist.github.io.git
+    git remote add origin https://github.com/Demirzekk/Demirzekk.github.io.git
     git push -u origin main
     ```
-3.  **Activate Pages:**
-    - Go to Repository **Settings** > **Pages**.
-    - Select Source: **Deploy from a branch** (Branch: `main`, Folder: `/`).
-    - Save.
+3.  **Settings:** GitHub Pages is enabled from the repository settings, serving from the `main` branch.
 
-🎉 Your CV will be live at: [https://musahinist.github.io](https://musahinist.github.io)
+## 📝 How to Edit
+
+1.  **Content (Text & Translations):**
+    -   Open `index.html`.
+    -   The `translations` object in the `<script>` tag at the bottom contains all text for both English (`en`) and Turkish (`tr`).
+    -   Edit the values in this JSON object to update the CV content.
+2.  **Styles:** Edit `style.css` to change colors, fonts, or spacing.
+3.  **PDF Layout:** Modify the `@media print` block in `style.css` to adjust paper margins or hide specific elements.

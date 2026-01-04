@@ -6,7 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zekai Demir - Senior Flutter Developer</title>
     <meta name="description"
-        content="Senior Flutter Developer with 5+ years of experience building secure, scalable mobile apps across Fintech, E-Commerce, and ERP sectors.">
+        content="Senior Flutter Developer with 5+ years of experience building secure, scalable mobile apps across Fintech, Trading, E-Commerce, and ERP sectors. Expert in TradingView charting, crypto exchanges, and Bitcoin payment gateways.">
+    <meta name="keywords"
+        content="Flutter Developer, Mobile App Developer, Fintech, Trading, Crypto, Bitcoin, TradingView, BLoC, Riverpod, Clean Architecture, iOS, Android">
+    <meta name="author" content="Zekai Demir">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://demirzekk.github.io/">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Zekai Demir - Senior Flutter Developer">
+    <meta property="og:description"
+        content="Senior Flutter Developer specialized in Fintech, Trading apps, Crypto exchanges, and Bitcoin payment gateways.">
+    <meta property="og:url" content="https://demirzekk.github.io/">
+    <meta property="profile:first_name" content="Zekai">
+    <meta property="profile:last_name" content="Demir">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Zekai Demir - Senior Flutter Developer">
+    <meta name="twitter:description"
+        content="Senior Flutter Developer specialized in Fintech, Trading apps, and Crypto exchanges.">
+
+    <!-- JSON-LD Structured Data for SEO & LLM Understanding -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://demirzekk.github.io/#person",
+        "name": "Zekai Demir",
+        "givenName": "Zekai",
+        "familyName": "Demir",
+        "jobTitle": "Senior Flutter Developer",
+        "description": "Senior Flutter Developer with 5+ years of experience building secure, scalable mobile apps across Fintech, Trading, E-Commerce, and ERP sectors. Expert in Clean Architecture, state management (BLoC/Riverpod), and integrating real-time data streams for crypto and stock market applications. Specialized in developing complex trading tools, including TradingView-style charting, interactive technical indicators, and high-frequency order-book visualizations.",
+        "url": "https://demirzekk.github.io/",
+        "email": "zekdemir1327@gmail.com",
+        "telephone": "+905059713674",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Pendik",
+            "addressRegion": "Istanbul",
+            "addressCountry": "Turkey"
+        },
+        "sameAs": [
+            "https://linkedin.com/in/zekai-demir-aa028a126",
+            "https://github.com/Demirzekk",
+            "https://stackoverflow.com/users/14048442"
+        ],
+        "knowsAbout": [
+            "Flutter",
+            "Dart",
+            "Mobile App Development",
+            "iOS Development",
+            "Android Development",
+            "Fintech Applications",
+            "Trading Applications",
+            "Cryptocurrency Exchanges",
+            "Bitcoin Payment Gateways",
+            "TradingView Charting",
+            "Real-time Data Streams",
+            "WebSocket Integration",
+            "Clean Architecture",
+            "BLoC Pattern",
+            "Riverpod",
+            "Firebase",
+            "RESTful APIs",
+            "SDK Development",
+            "Kotlin",
+            "Swift"
+        ],
+        "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Senior Flutter Developer",
+            "occupationLocation": {
+                "@type": "Country",
+                "name": "Turkey"
+            },
+            "skills": "Flutter, Dart, BLoC, Riverpod, Clean Architecture, Firebase, TradingView SDK, WebSocket, Kotlin, Swift"
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Optimus Yazılım",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Istanbul",
+                "addressCountry": "Turkey"
+            }
+        },
+        "alumniOf": [
+            {
+                "@type": "EducationalOrganization",
+                "name": "Anadolu University",
+                "department": "Faculty of Open Education"
+            },
+            {
+                "@type": "EducationalOrganization",
+                "name": "Canakkale Onsekiz Mart University"
+            }
+        ],
+        "knowsLanguage": [
+            {
+                "@type": "Language",
+                "name": "Turkish",
+                "alternateName": "tr"
+            },
+            {
+                "@type": "Language",
+                "name": "English",
+                "alternateName": "en"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Additional WebPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Zekai Demir - Senior Flutter Developer Resume",
+        "description": "Professional resume and portfolio of Zekai Demir, a Senior Flutter Developer specializing in Fintech, Trading, and Crypto applications.",
+        "url": "https://demirzekk.github.io/",
+        "mainEntity": {
+            "@id": "https://demirzekk.github.io/#person"
+        },
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".summary", ".job-title", ".skill-tag"]
+        }
+    }
+    </script>
+
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,17 +146,24 @@
 </head>
 
 <body>
-    <!-- Fixed PDF Download Button -->
-    <button id="pdf-download-btn" onclick="generatePDF()" title="Download as PDF">
-        <i class="fa-solid fa-file-pdf"></i>
-    </button>
+    <!-- Fixed Download Buttons -->
+    <!-- Fixed Top Right Controls -->
+    <div class="fixed-controls">
+        <div class="lang-switch">
+            <button onclick="switchLanguage('tr')" class="lang-btn" id="btn-tr">TR</button>
+            <button onclick="switchLanguage('en')" class="lang-btn active" id="btn-en">EN</button>
+        </div>
+        <button id="pdf-download-btn" onclick="generatePDF()" title="Download PDF / PDF İndir">
+            <i class="fa-solid fa-file-pdf"></i>
+        </button>
+    </div>
 
 
     <div class="container">
         <header class="header-centered">
             <div class="header-left">
                 <h1>Zekai DEMİR</h1>
-                <h2>Senior Flutter Developer</h2>
+                <h2 data-i18n="job_title">Senior Flutter Developer</h2>
             </div>
             <div class="header-right">
                 <div class="contact-row">
@@ -48,20 +185,12 @@
         </header>
 
         <section class="summary">
-            <h3 class="section-title">Professional Summary</h3>
-            <p>
-                Senior Flutter Developer with <strong>5+ years of experience</strong> building secure, scalable mobile
-                apps across
-                <strong>Fintech, Trading, E-Commerce, and ERP</strong> sectors. Expert in <strong>Clean
-                    Architecture</strong>,
-                state management (<strong>BLoC/Riverpod</strong>), and integrating real-time data streams for crypto and
-                stock market applications.
-                Specialized in developing complex trading tools, including <strong>TradingView-style charting</strong>,
-                interactive technical indicators,
-                and high-frequency order-book visualizations. Proven track record of delivering pixel-perfect UI and
-                high-performance solutions
-                for <strong>digital asset exchanges</strong> and <strong>Bitcoin-focused payment gateways</strong> on
-                iOS and Android.
+            <h3 class="section-title" data-i18n="section_summary">Professional Summary</h3>
+            <p data-i18n="summary_text">
+                Senior Flutter Developer with 5+ years of experience specializing in high-frequency trading apps and
+                native SDK development. Proven track record in bridging Flutter with native Android/iOS modules to
+                optimize performance in Fintech architectures. Experienced in leading teams and mentoring junior
+                developers.
             </p>
         </section>
 
@@ -72,52 +201,64 @@
             <div class="job-item">
                 <div class="job-header">
                     <div>
-                        <span class="job-title">Senior Flutter Developer</span> <span
+                        <span class="job-title" data-i18n="job_optimus_title">Senior Flutter Developer</span> <span
                             style="margin: 0 5px; color: #ccc;">|</span> <span class="company"><a href="#"
                                 target="_blank">Optimus Yazılım</a></span>
                     </div>
-                    <div class="job-meta">March 2023 – Present | Istanbul, Turkey</div>
+                    <div class="job-meta" data-i18n="job_optimus_date">March 2023 – Present | Istanbul, Turkey</div>
                 </div>
                 <div class="job-details">
                     <ul>
-                        <li>Developed a <strong>White Label fintech mobile application</strong> with customizable
+                        <li data-i18n="job_optimus_desc_7">Resolved critical security vulnerabilities identified during
+                            <strong>Penetration
+                                Testing</strong> and optimized app performance to meet strict fintech security
+                            standards.
+                        </li>
+                        <li data-i18n="job_optimus_desc_1">Developed a <strong>White Label fintech mobile
+                                application</strong> with customizable
                             architecture, enabling rapid distribution for various clients.</li>
-                        <li>Implemented real-time data communication using <strong>WebSockets</strong> and integrated
+                        <li data-i18n="job_optimus_desc_2">Implemented real-time data communication using
+                            <strong>WebSockets</strong> and integrated
                             <strong>TradingView Advance Trading SDK</strong>.
                         </li>
-                        <li>Engineered a <strong>TOTP authenticator application</strong> and developed native SDKs
+                        <li data-i18n="job_optimus_desc_3">Engineered a <strong>TOTP authenticator application</strong>
+                            and developed native SDKs
                             (<strong>.aar</strong> and <strong>.xcframework</strong>) for seamless third-party
                             integration.</li>
-                        <li>Built a <strong>White Label RKYC application</strong> integrated with Aksis Axonboard,
+                        <li data-i18n="job_optimus_desc_4">Built a <strong>White Label RKYC application</strong>
+                            integrated with Aksis Axonboard,
                             utilizing native platform channels for high-performance identity verification.</li>
-                        <li>Encapsulated the RKYC solution into a reusable SDK compatible with multiple platforms
+                        <li data-i18n="job_optimus_desc_5">Encapsulated the RKYC solution into a reusable SDK compatible
+                            with multiple platforms
                             (<strong>Kotlin, Swift, React Native</strong>), expanding the product's market reach.</li>
-                        <li>Integrated <strong>Realtime Data Providers</strong> (Foreks, iDeal, and Matrix) to ensure
+                        <li data-i18n="job_optimus_desc_6">Integrated <strong>Realtime Data Providers</strong> (Foreks,
+                            iDeal, and Matrix) to ensure
                             accurate financial data streaming.</li>
-                        <li>Resolved critical security vulnerabilities identified during <strong>Penetration
-                                Testing</strong> and optimized app performance to meet strict fintech security
-                            standards.</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Flutter Developer & Mentor - İstanbul Ticaret Odası -->
+            <!-- Senior Flutter Developer & Mentor - İstanbul Ticaret Odası -->
             <div class="job-item">
                 <div class="job-header">
                     <div>
-                        <span class="job-title">Flutter Developer & Mentor</span> <span
-                            style="margin: 0 5px; color: #ccc;">|</span> <span class="company"><a href="#"
-                                target="_blank">İstanbul Ticaret Odası - SoftITO Yazılım-Bilişim Akademisi</a></span>
+                        <span class="job-title" data-i18n="job_ito_title">Senior Flutter Developer & Mentor</span> <span
+                            style="margin: 0 5px; color: #ccc;">|</span> <span class="company"
+                            data-i18n="job_ito_org"><a href="#" target="_blank">İstanbul Ticaret Odası - SoftITO
+                                Yazılım-Bilişim Akademisi</a></span>
                     </div>
-                    <div class="job-meta">March 2023 – April 2023 | Istanbul, Turkey</div>
+                    <div class="job-meta" data-i18n="job_ito_date">March 2023 – April 2023 | Istanbul, Turkey</div>
                 </div>
                 <div class="job-details">
                     <ul>
-                        <li>Served as a <strong>Flutter Instructor</strong> for an intensive in-person mobile
+                        <li data-i18n="job_ito_desc_1">Served as a <strong>Flutter Instructor</strong> for an intensive
+                            in-person mobile
                             development bootcamp.</li>
-                        <li>Mentored a group of <strong>12 engineering students</strong>, providing concentrated
+                        <li data-i18n="job_ito_desc_2">Mentored a group of <strong>36 engineering students</strong>,
+                            providing concentrated
                             training on Flutter and Firebase.</li>
-                        <li>Guided students through the full development lifecycle, supervising the creation of their
+                        <li data-i18n="job_ito_desc_3">Guided students through the full development lifecycle,
+                            supervising the creation of their
                             final capstone projects.</li>
                     </ul>
                 </div>
@@ -127,23 +268,29 @@
             <div class="job-item">
                 <div class="job-header">
                     <div>
-                        <span class="job-title">Mid. Flutter Developer</span> <span
+                        <span class="job-title" data-i18n="job_fimka_title">Mid. Flutter Developer</span> <span
                             style="margin: 0 5px; color: #ccc;">|</span> <span class="company"><a href="#"
                                 target="_blank">Fimka IT A.Ş.</a></span>
                     </div>
-                    <div class="job-meta">March 2021 – March 2023 | Istanbul, Turkey</div>
+                    <div class="job-meta" data-i18n="job_fimka_date">March 2021 – March 2023 | Istanbul, Turkey</div>
                 </div>
                 <div class="job-details">
                     <ul>
-                        <li>Developed two distinct applications within the <strong>E-Commerce ecosystem</strong>: a
-                            Customer App for shopping and a Seller App for inventory and order management.</li>
-                        <li>Built and deployed scalable cross-platform mobile applications from scratch using Flutter.
+                        <li data-i18n="job_fimka_desc_1">Developed two distinct applications within the
+                            <strong>E-Commerce ecosystem</strong>: a
+                            Customer App for shopping and a Seller App for inventory and order management.
                         </li>
-                        <li>Transformed complex <strong>Figma designs</strong> into pixel-perfect, responsive Flutter
+                        <li data-i18n="job_fimka_desc_2">Built and deployed scalable cross-platform mobile applications
+                            from scratch using Flutter.
+                        </li>
+                        <li data-i18n="job_fimka_desc_3">Transformed complex <strong>Figma designs</strong> into
+                            pixel-perfect, responsive Flutter
                             widgets ensuring consistent UI/UX.</li>
-                        <li>Managed complex application state utilizing <strong>BLoC and Provider</strong> patterns to
+                        <li data-i18n="job_fimka_desc_4">Managed complex application state utilizing <strong>BLoC and
+                                Provider</strong> patterns to
                             ensure efficient data flow.</li>
-                        <li>Integrated third-party SDKs and maintained existing codebases, focusing on bug fixes and
+                        <li data-i18n="job_fimka_desc_5">Integrated third-party SDKs and maintained existing codebases,
+                            focusing on bug fixes and
                             feature enhancements.</li>
                     </ul>
                 </div>
@@ -153,17 +300,19 @@
             <div class="job-item">
                 <div class="job-header">
                     <div>
-                        <span class="job-title">Technology Instructor</span> <span
+                        <span class="job-title" data-i18n="job_deneyap_title">Technology Instructor</span> <span
                             style="margin: 0 5px; color: #ccc;">|</span> <span class="company"><a href="#"
                                 target="_blank">Deneyap Türkiye</a></span>
                     </div>
-                    <div class="job-meta">April 2020 – May 2024 | Istanbul, Turkey</div>
+                    <div class="job-meta" data-i18n="job_deneyap_date">April 2020 – May 2024 | Istanbul, Turkey</div>
                 </div>
                 <div class="job-details">
                     <ul>
-                        <li>Instructed high school students in <strong>Mobile Application and Web Programming</strong>
+                        <li data-i18n="job_deneyap_desc_1">Instructed high school students in <strong>Mobile Application
+                                and Web Programming</strong>
                             fundamentals.</li>
-                        <li>Mentored students on algorithmic thinking and software development concepts, fostering the
+                        <li data-i18n="job_deneyap_desc_2">Mentored students on algorithmic thinking and software
+                            development concepts, fostering the
                             next generation of developers.</li>
                     </ul>
                 </div>
@@ -173,15 +322,18 @@
             <div class="job-item">
                 <div class="job-header">
                     <div>
-                        <span class="job-title">System Network Administrator (Intern)</span> <span
-                            style="margin: 0 5px; color: #ccc;">|</span> <span class="company">Canakkale State
+                        <span class="job-title" data-i18n="job_intern_title">System Network Administrator
+                            (Intern)</span> <span style="margin: 0 5px; color: #ccc;">|</span> <span
+                            class="company">Canakkale State
                             Hospital</span>
                     </div>
-                    <div class="job-meta">July 2017 – September 2017 | Canakkale, Turkey</div>
+                    <div class="job-meta" data-i18n="job_intern_date">July 2017 – September 2017 | Canakkale, Turkey
+                    </div>
                 </div>
                 <div class="job-details">
                     <ul>
-                        <li>Managed the hospital's system networks and provided IT infrastructure support during the
+                        <li data-i18n="job_intern_desc_1">Managed the hospital's system networks and provided IT
+                            infrastructure support during the
                             internship period.</li>
                     </ul>
                 </div>
@@ -191,21 +343,25 @@
             <div class="job-item">
                 <div class="job-header">
                     <div>
-                        <span class="job-title">Freelance Mobile App Developer</span> <span
-                            style="margin: 0 5px; color: #ccc;">|</span> <span class="company">Remote</span>
+                        <span class="job-title" data-i18n="job_freelance_title">Freelance Mobile App Developer</span>
+                        <span style="margin: 0 5px; color: #ccc;">|</span> <span class="company">Remote or
+                            Outsource</span>
                     </div>
-                    <div class="job-meta">2019 – Present | Global & Local Projects</div>
+                    <div class="job-meta" data-i18n="job_freelance_date">2019 – Present | Global & Local Projects</div>
                 </div>
                 <div class="job-details">
                     <p style="margin-bottom: 10px; color: #475569;">Delivered diverse mobile solutions ranging from ERP
                         systems to Smart City integrations:</p>
                     <ul>
-                        <li><strong>Enterprise & Smart City:</strong> Developed "Kent Kart" integration apps for Şişli
+                        <li data-i18n="job_freelance_desc_1"><strong>Enterprise & Smart City:</strong> Developed "Kent
+                            Kart" integration apps for Şişli
                             and Karşıyaka Municipalities. Built an ERP & Stock Control application for Balmy Cosmetics
                             tailored for handheld terminals.</li>
-                        <li><strong>Service & Utility:</strong> Created Take Taxi (local taxi-hailing app), Hesap Lütfen
+                        <li data-i18n="job_freelance_desc_2"><strong>Service & Utility:</strong> Created Take Taxi
+                            (local taxi-hailing app), Hesap Lütfen
                             (digital menu sharing), and WinUp (White Label Gamification app).</li>
-                        <li><strong>EdTech & Entertainment:</strong> Nartest (TYT-AYT Exam Prep), Animo (Interactive
+                        <li data-i18n="job_freelance_desc_3"><strong>EdTech & Entertainment:</strong> Nartest (TYT-AYT
+                            Exam Prep), Animo (Interactive
                             Storybook for children), Falve (Fortune telling), Counter Event applications, Linqi App
                             (English Conversation practice app).</li>
                     </ul>
@@ -215,10 +371,10 @@
         </section>
 
         <section class="skills">
-            <h3 class="section-title">Technical Skills</h3>
+            <h3 class="section-title" data-i18n="section_skills">Technical Skills</h3>
 
             <div class="skill-category">
-                <span class="category-title">Mobile Development</span>
+                <span class="category-title" data-i18n="skill_cat_mobile">Mobile Development</span>
                 <div class="skills-grid">
                     <span class="skill-tag">Flutter</span>
                     <span class="skill-tag">Dart</span>
@@ -228,7 +384,7 @@
             </div>
 
             <div class="skill-category">
-                <span class="category-title">State Management</span>
+                <span class="category-title" data-i18n="skill_cat_state">State Management</span>
                 <div class="skills-grid">
                     <span class="skill-tag">BLoC</span>
                     <span class="skill-tag">Riverpod 2.0</span>
@@ -238,7 +394,7 @@
             </div>
 
             <div class="skill-category">
-                <span class="category-title">Architecture & Design</span>
+                <span class="category-title" data-i18n="skill_cat_arch">Architecture & Design</span>
                 <div class="skills-grid">
                     <span class="skill-tag">Clean Architecture</span>
                     <span class="skill-tag">MVVM</span>
@@ -248,7 +404,7 @@
             </div>
 
             <div class="skill-category">
-                <span class="category-title">Backend & Database</span>
+                <span class="category-title" data-i18n="skill_cat_backend">Backend & Database</span>
                 <div class="skills-grid">
                     <span class="skill-tag">Firebase (Auth, Firestore, Analytics, Realtime DB)</span>
                     <span class="skill-tag">SQL</span>
@@ -258,7 +414,7 @@
             </div>
 
             <div class="skill-category">
-                <span class="category-title">Tools & DevOps</span>
+                <span class="category-title" data-i18n="skill_cat_tools">Tools & DevOps</span>
                 <div class="skills-grid">
                     <span class="skill-tag">Git</span>
                     <span class="skill-tag">Git-Flow</span>
@@ -272,7 +428,7 @@
             </div>
 
             <div class="skill-category">
-                <span class="category-title">Fintech & Security</span>
+                <span class="category-title" data-i18n="skill_cat_fintech">Fintech & Security</span>
                 <div class="skills-grid">
                     <span class="skill-tag">AES Encryption</span>
                     <span class="skill-tag">Biometric Authentication</span>
@@ -283,42 +439,45 @@
         </section>
 
         <section class="education">
-            <h3 class="section-title">Education</h3>
+            <h3 class="section-title" data-i18n="section_education">Education</h3>
 
             <div class="education-item">
                 <div>
-                    <div class="degree">Bachelor's Degree in Management Information Systems</div>
-                    <div class="school">Anadolu University | Faculty of Open Education</div>
+                    <div class="degree" data-i18n="edu_bs">Bachelor's Degree in Management Information Systems</div>
+                    <div class="school" data-i18n="edu_anadolu">Anadolu University | Faculty of Open Education</div>
                 </div>
                 <div class="grad-date"></div>
             </div>
 
             <div class="education-item">
                 <div>
-                    <div class="degree">Associate Degree in Computer Programming</div>
-                    <div class="school">Canakkale Onsekiz Mart University | GPA: 3.12</div>
+                    <div class="degree" data-i18n="edu_as">Associate Degree in Computer Programming | GPA: 3.12</div>
+                    <div class="school" data-i18n="edu_comu">Canakkale Onsekiz Mart University</div>
                 </div>
                 <div class="grad-date"></div>
             </div>
 
             <div class="education-item">
                 <div>
-                    <div class="degree">English Preparatory School</div>
-                    <div class="school">Canakkale Onsekiz Mart University | 2015 – 2016</div>
+                    <div class="degree" data-i18n="edu_prep">English Preparatory School</div>
+                    <div class="school" data-i18n="edu_prep_school">Canakkale Onsekiz Mart University | 2015 – 2016
+                    </div>
                 </div>
                 <div class="grad-date"></div>
             </div>
         </section>
 
         <section class="languages">
-            <h3 class="section-title">Languages</h3>
+            <h3 class="section-title" data-i18n="section_languages">Languages</h3>
             <div class="skills-grid">
                 <span class="skill-tag"
-                    style="background: white; border: 1px solid #e2e8f0; font-weight: 500; color: var(--primary-color);"><strong>Turkish:</strong>
-                    Native</span>
+                    style="background: white; border: 1px solid #e2e8f0; font-weight: 500; color: var(--primary-color);"><strong
+                        data-i18n="lang_tr">Turkish:</strong>
+                    <span data-i18n="lang_tr_level">Native</span></span>
                 <span class="skill-tag"
-                    style="background: white; border: 1px solid #e2e8f0; font-weight: 500; color: var(--primary-color);"><strong>English:</strong>
-                    Professional Working Proficiency (Reading/Writing)</span>
+                    style="background: white; border: 1px solid #e2e8f0; font-weight: 500; color: var(--primary-color);"><strong
+                        data-i18n="lang_en">English:</strong>
+                    <span data-i18n="lang_en_level">Professional Working Proficiency (Reading/Writing)</span></span>
             </div>
         </section>
 
@@ -327,58 +486,171 @@
 
 
     <script>
+        const translations = {
+            en: {
+                "job_title": "Senior Flutter Developer",
+                "pdf_tooltip": "Download PDF",
+                "section_summary": "PROFESSIONAL SUMMARY",
+                "summary_text": "Senior Flutter Developer with 5+ years of experience specializing in high-frequency trading apps and native SDK development. Proven track record in bridging Flutter with native Android/iOS modules to optimize performance in Fintech architectures. Experienced in leading teams and mentoring junior developers.",
+                "section_skills": "TECHNICAL SKILLS",
+                "section_experience": "WORK EXPERIENCE",
+                "job_optimus_title": "Senior Flutter Developer",
+                "job_optimus_date": "March 2023 – Present | Istanbul, Turkey",
+                "job_optimus_desc_1": "Developed a White Label fintech mobile application with customizable architecture, enabling rapid distribution for various clients",
+                "job_optimus_desc_2": "Implemented real-time data communication using WebSockets and integrated TradingView Advance Trading SDK",
+                "job_optimus_desc_3": "Engineered a TOTP authenticator application and developed native SDKs (.aar and .xcframework) for seamless third-party integration",
+                "job_optimus_desc_4": "Built a White Label RKYC application integrated with Aksis Axonboard, utilizing native platform channels for high-performance identity verification",
+                "job_optimus_desc_5": "Encapsulated the RKYC solution into a reusable SDK compatible with multiple platforms (Kotlin, Swift, React Native)",
+                "job_optimus_desc_6": "Integrated Realtime Data Providers (Foreks, iDeal, and Matrix) to ensure accurate financial data streaming",
+                "job_optimus_desc_7": "Resolved critical security vulnerabilities identified during Penetration Testing and optimized app performance",
+                "job_ito_title": "Senior Flutter Developer & Mentor",
+                "job_ito_org": "İstanbul Ticaret Odası - SoftITO Software Academy",
+                "job_ito_date": "March 2023 – April 2023 | Istanbul, Turkey",
+                "job_ito_desc_1": "Served as a Flutter Instructor for an intensive in-person mobile development bootcamp.",
+                "job_ito_desc_2": "Mentored a group of 36 engineering students, providing concentrated training on Flutter and Firebase.",
+                "job_ito_desc_3": "Guided students through the full development lifecycle, supervising the creation of their final capstone projects.",
+                "job_fimka_title": "Mid. Flutter Developer",
+                "job_fimka_date": "March 2021 – March 2023 | Istanbul, Turkey",
+                "job_fimka_desc_1": "Developed two distinct applications within the E-Commerce ecosystem: a Customer App and a Seller App",
+                "job_fimka_desc_2": "Built and deployed scalable cross-platform mobile applications from scratch using Flutter",
+                "job_fimka_desc_3": "Transformed complex Figma designs into pixel-perfect, responsive Flutter widgets",
+                "job_fimka_desc_4": "Managed complex application state utilizing BLoC and Provider patterns",
+                "job_fimka_desc_5": "Integrated third-party SDKs and maintained existing codebases",
+                "job_deneyap_title": "Technology Instructor",
+                "job_deneyap_date": "April 2020 – May 2024 | Istanbul, Turkey",
+                "job_deneyap_desc_1": "Instructed high school students in Mobile Application and Web Programming fundamentals",
+                "job_deneyap_desc_2": "Mentored students on algorithmic thinking and software development concepts",
+                "job_intern_title": "System Network Administrator (Intern)",
+                "job_intern_date": "July 2017 – September 2017 | Canakkale, Turkey",
+                "job_intern_desc_1": "Managed the hospital's system networks and provided IT infrastructure support",
+                "job_freelance_title": "Freelance Mobile App Developer",
+                "job_freelance_date": "2019 – Present | Global & Local Projects",
+                "job_freelance_desc_1": "Enterprise & Smart City: Komşu Kart integration apps for Şişli and Karşıyaka Municipalities, ERP & Stock Control for Balmy Cosmetics",
+                "job_freelance_desc_2": "Service & Utility: Take Taxi (Taxi Hailing App), Bodrum Hesap Lütfen (digital menu), WinUp (Gamification app), Balmy ERP & Stock Control App",
+                "job_freelance_desc_3": "EdTech & Entertainment: Nartest (TYT-AYT Exam Prep), Animo (Interactive Storybook), Falve, Counter Event, Linqi App",
+                "section_education": "EDUCATION",
+                "edu_bs": "Bachelor's Degree in Management Information Systems",
+                "edu_anadolu": "Anadolu University | Faculty of Open Education",
+                "edu_as": "Associate Degree in Computer Programming | GPA: 3.12",
+                "edu_comu": "Canakkale Onsekiz Mart University",
+                "edu_prep": "English Preparatory School",
+                "edu_prep_school": "Canakkale Onsekiz Mart University | 2015 – 2016",
+                "section_languages": "LANGUAGES",
+                "lang_tr": "Turkish",
+                "lang_tr_level": "Native",
+                "lang_en": "English",
+                "lang_en_level": "Professional Working Proficiency",
+                "skill_cat_mobile": "Mobile Development",
+                "skill_cat_state": "State Management",
+                "skill_cat_arch": "Architecture & Design",
+                "skill_cat_backend": "Backend & Database",
+                "skill_cat_tools": "Tools & DevOps",
+                "skill_cat_fintech": "Fintech & Security"
+            },
+            tr: {
+                "job_title": "Kıdemli Flutter Geliştirici",
+                "pdf_tooltip": "PDF İndir",
+                "section_summary": "ÖZET / HAKKIMDA",
+                "summary_text": "Fintech, Trading ve ERP ve E-Commerce sektörlerinde 5+ yılı aşkın süredir güvenli ve ölçeklenebilir mobil uygulamalar geliştiren kıdemli bir Flutter geliştiricisiyim. Özellikle Trade ve borsa uygulamaları için gerçek zamanlı veri akışları, TradingView tarzı gelişmiş grafikler üzerine uzmanlaştım. Ayrıca android ve iOS platformlarında native SDK geliştirme yeteneğine de sahibim.  Clean Architecture ve modern state management prensiplerini kullanarak, dijital varlık borsaları ve E-Commerce odaklı ödeme sistemleri için hem iOS hem de Android’de çözümler üretmekteyim.",
+                "section_skills": "TEKNİK YETKİNLİKLER",
+                "section_experience": "İŞ DENEYİMİ",
+                "job_optimus_title": "Kıdemli Flutter Geliştirici",
+                "job_optimus_date": "Mart 2023 – Günümüz | İstanbul, Türkiye",
+                "job_optimus_desc_1": "Çeşitli müşteriler için hızlı dağıtım sağlayan, özelleştirilebilir mimariye sahip White Label fintech mobil uygulaması geliştirdi",
+                "job_optimus_desc_2": "WebSocket kullanarak gerçek zamanlı veri iletişimini uyguladı ve TradingView Advance Trading SDK'sını entegre etti",
+                "job_optimus_desc_3": "Sorunsuz üçüncü taraf entegrasyonu için TOTP kimlik doğrulayıcı uygulaması tasarladı ve native SDK'lar (.aar ve .xcframework) geliştirdi",
+                "job_optimus_desc_4": "Yüksek performanslı kimlik doğrulama için native platform kanallarını kullanan, Aksis Axonboard ile entegre White Label RKYC uygulaması oluşturdu",
+                "job_optimus_desc_5": "RKYC çözümünü birden fazla platformla (Kotlin, Swift, React Native) uyumlu, yeniden kullanılabilir bir SDK haline getirdi",
+                "job_optimus_desc_6": "Doğru finansal veri akışını sağlamak için Gerçek Zamanlı Veri Sağlayıcılarını (Foreks, iDeal ve Matrix) entegre etti",
+                "job_optimus_desc_7": "Sızma Testleri sırasında tespit edilen kritik güvenlik açıklarını giderdi ve uygulama performansını optimize etti",
+                "job_ito_title": "Kıdemli Flutter Geliştirici & Mentor",
+                "job_ito_org": "İstanbul Ticaret Odası - SoftITO Yazılım Akademisi",
+                "job_ito_date": "Mart 2023 – Nisan 2023 | İstanbul, Türkiye",
+                "job_ito_desc_1": "Yoğun yüz yüze mobil geliştirme kampında Flutter Eğitmeni olarak görev aldı.",
+                "job_ito_desc_2": "Flutter ve Firebase üzerine yoğun eğitim vererek 36 mühendislik öğrencisine mentorluk yaptı.",
+                "job_ito_desc_3": "Öğrencilerin final bitirme projelerinin oluşturulmasını denetleyerek tüm geliştirme yaşam döngüsü boyunca rehberlik etti.",
+                "job_fimka_title": "Flutter Geliştirici",
+                "job_fimka_date": "Mart 2021 – Mart 2023 | İstanbul, Türkiye",
+                "job_fimka_desc_1": "E-Ticaret ekosistemi içinde iki ayrı uygulama geliştirdi: Müşteri Uygulaması ve Satıcı Uygulaması",
+                "job_fimka_desc_2": "Flutter kullanarak sıfırdan ölçeklenebilir çapraz platform mobil uygulamalar oluşturdu ve yayınladı",
+                "job_fimka_desc_3": "Karmaşık Figma tasarımlarını piksel mükemmelliğinde, duyarlı Flutter widget'larına dönüştürdü",
+                "job_fimka_desc_4": "BLoC ve Provider desenlerini kullanarak karmaşık uygulama durumunu yönetti",
+                "job_fimka_desc_5": "Üçüncü taraf SDK'ları entegre etti ve mevcut kod tabanlarının bakımını yaptı",
+                "job_deneyap_title": "Teknoloji Eğitmeni",
+                "job_deneyap_date": "Nisan 2020 – Mayıs 2024 | İstanbul, Türkiye",
+                "job_deneyap_desc_1": "Lise öğrencilerine Mobil Uygulama ve Web Programlama temellerini öğretti",
+                "job_deneyap_desc_2": "Algoritmik düşünme ve yazılım geliştirme kavramları üzerine öğrencilere mentorluk yaptı",
+                "job_intern_title": "Sistem Ağ Yöneticisi (Stajyer)",
+                "job_intern_date": "Temmuz 2017 – Eylül 2017 | Çanakkale, Türkiye",
+                "job_intern_desc_1": "Hastane sistem ağlarını yönetti ve BT altyapı desteği sağladı",
+                "job_freelance_title": "Freelance Mobil Uygulama Geliştirici",
+                "job_freelance_date": "2019 – Günümüz | Global & Yerel Projeler",
+                "job_freelance_desc_1": "Kurumsal & Akıllı Şehir: Şişli ve Karşıyaka Belediyeleri için Kent Kart entegrasyon uygulamaları, Balmy Kozmetik için ERP & Stok Takibi",
+                "job_freelance_desc_2": "Hizmet: Take Taxi, Hesap Lütfen (dijital menü), WinUp (Oyunlaştırma uygulaması)",
+                "job_freelance_desc_3": "Eğitim & Eğlence: Nartest (TYT-AYT Hazırlık), Animo (Etkileşimli Hikaye Kitabı), Falve, Counter Event, Linqi App",
+                "section_education": "EĞİTİM",
+                "edu_bs": "Yönetim Bilişim Sistemleri Lisans Derecesi",
+                "edu_anadolu": "Anadolu Üniversitesi | Açıköğretim Fakültesi",
+                "edu_as": "Bilgisayar Programcılığı Önlisans Derecesi | GPA: 3.12",
+                "edu_comu": "Çanakkale Onsekiz Mart Üniversitesi",
+                "edu_prep": "İngilizce Hazırlık Okulu",
+                "edu_prep_school": "Çanakkale Onsekiz Mart Üniversitesi | 2015 – 2016",
+                "section_languages": "DİLLER",
+                "lang_tr": "Türkçe",
+                "lang_tr_level": "Anadil",
+                "lang_en": "İngilizce",
+                "lang_en_level": "Profesyonel Çalışma Yetkinliği",
+                "skill_cat_mobile": "Mobil Geliştirme",
+                "skill_cat_state": "Durum Yönetimi (State Management)",
+                "skill_cat_arch": "Mimari & Tasarım",
+                "skill_cat_backend": "Backend & Veritabanı",
+                "skill_cat_tools": "Araçlar & DevOps",
+                "skill_cat_fintech": "Fintech & Güvenlik"
+            }
+        };
+
+        function switchLanguage(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+
+            const pdfBtn = document.getElementById('pdf-download-btn');
+            if (pdfBtn) pdfBtn.title = translations[lang]['pdf_tooltip'];
+
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            const activeBtn = document.getElementById(`btn-${lang}`);
+            if (activeBtn) activeBtn.classList.add('active');
+        }
+
         function generatePDF() {
-            // Calculate the full dimensions of the container or body
-            // We use the container width to ensure it fits the design exactly
-            const container = document.querySelector('.container');
-
-            // Add a buffer to the height to ensure everything fits comfortably
-            // This extra space (e.g. +20px) makes the paper slightly longer than the content.
-            const bodyHeight = Math.ceil(container.scrollHeight) + 20;
-            const bodyWidth = Math.ceil(container.scrollWidth);
-
+            const body = document.body;
             const style = document.createElement('style');
             style.innerHTML = `
             @media print {
-                @page {
-                    /* Set size to exact content dimensions */
-                    size: ${bodyWidth}px ${bodyHeight}px; 
-                    margin: 0; 
-                }
-                html, body {
-                    width: ${bodyWidth}px;
-                    height: ${bodyHeight}px;
-                    margin: 0 !important;
-                    padding: 0 !important;
-                    overflow: hidden !important; 
-                }
-                .container {
-                    width: 100% !important;
-                    max-width: none !important;
-                    box-shadow: none !important;
-                    margin: 0 !important;
-                 }
-                
-                /* Explicitly hide the button in this dynamic generated style */
-                #pdf-download-btn, button#pdf-download-btn {
-                    display: none !important;
-                    opacity: 0 !important;
-                    visibility: hidden !important;
+                @page { margin: 0; size: auto; }
+                body { 
+                    -webkit-print-color-adjust: exact; 
+                    background-color: white !important;
+                    background-image: none !important;
                 }
             }
         `;
             document.head.appendChild(style);
-
-            const originalTitle = document.title;
-            const date = new Date().toISOString().split('T')[0];
-            document.title = `Zekai_Demir_CV_${date}`;
-
             window.print();
+            document.head.removeChild(style);
+        }
 
+        window.onload = function () {
+            // Intro animation trigger
             setTimeout(() => {
-                document.head.removeChild(style);
-                document.title = originalTitle;
-            }, 1000);
+                const elements = document.querySelectorAll('.slide-up');
+                elements.forEach(element => {
+                    element.classList.add('active');
+                });
+            }, 100);
         }
     </script>
 </body>
