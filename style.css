@@ -503,6 +503,59 @@ h3.section-title::before {
   border-color: transparent !important;
 }
 
+/* References Section */
+.references-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.reference-item {
+  padding: 20px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 12px;
+  border: 1px solid var(--section-line);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.reference-item:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+}
+
+.reference-name {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.reference-title {
+  color: var(--secondary-color);
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.reference-contact {
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.reference-contact i {
+  margin-right: 6px;
+  color: #1e40af;
+}
+
+@media (max-width: 768px) {
+  .references-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
 /* Fixed Controls Container */
 .fixed-controls {
   position: fixed !important;
@@ -775,7 +828,8 @@ h3.section-title::before {
   .job-item,
   .skills,
   .education,
-  .languages {
+  .languages,
+  .references {
     padding-left: 30px !important;
     padding-right: 30px !important;
   }
@@ -883,6 +937,31 @@ h3.section-title::before {
     border: 1px solid #cbd5e1 !important;
   }
 
+  /* References */
+  .references-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 15px !important;
+  }
+
+  .reference-item {
+    background: white !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 15px !important;
+  }
+
+  .reference-item:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .reference-name {
+    color: #000 !important;
+  }
+
+  .reference-contact {
+    color: #0f3460 !important;
+  }
+
   /* Links */
   a {
     color: #0f3460 !important;
@@ -913,10 +992,15 @@ h3.section-title::before {
   }
 
   /* Smart Page Breaks */
-  .education-item,
-  .job-item {
+  .education-item {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
+  }
+
+  /* Allow long job items to break to avoid massive gaps */
+  .job-item {
+    page-break-inside: auto !important;
+    break-inside: auto !important;
   }
 
   /* Hide empty blue chips in education */
