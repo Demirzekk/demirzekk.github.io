@@ -153,6 +153,9 @@
             <button onclick="switchLanguage('tr')" class="lang-btn" id="btn-tr">TR</button>
             <button onclick="switchLanguage('en')" class="lang-btn active" id="btn-en">EN</button>
         </div>
+        <button id="slide-mode-btn" onclick="toggleSlideMode()" title="Slide Mode / Slayt Modu">
+            <i class="fa-solid fa-person-chalkboard"></i>
+        </button>
         <button id="pdf-download-btn" onclick="generatePDF()" title="Download PDF / PDF İndir">
             <i class="fa-solid fa-file-pdf"></i>
         </button>
@@ -504,6 +507,12 @@
 
     </div>
 
+    <!-- Slide Navigation Controls -->
+    <div class="slide-controls" style="display: none;">
+        <button onclick="prevSlide()" id="prev-btn" title="Previous / Önceki"><i class="fa-solid fa-chevron-left"></i></button>
+        <button onclick="nextSlide()" id="next-btn" title="Next / Sonraki"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
 
 
     <script>
@@ -680,6 +689,91 @@
                 });
             }, 100);
         }
+
+        // --- Slide Mode Logic ---
+        let isSlideMode = false;
+        let currentSlide = 0;
+        let slideElements = [];
+
+        function toggleSlideMode() {
+            isSlideMode = !isSlideMode;
+            const slideBtn = document.getElementById('slide-mode-btn');
+            const slideControls = document.querySelector('.slide-controls');
+            
+            if (!slideElements.length) {
+                // Collect granular slides
+                slideElements = Array.from(document.querySelectorAll('header.header-centered, section.summary, .job-item, .skill-category, .education-item, section.languages, section.references'));
+                slideElements.forEach(el => el.classList.add('slide-element'));
+            }
+
+            if (isSlideMode) {
+                document.body.classList.add('slide-mode-active');
+                slideBtn.classList.add('active');
+                slideControls.style.display = 'flex';
+                showSlide(0);
+            } else {
+                document.body.classList.remove('slide-mode-active');
+                slideBtn.classList.remove('active');
+                slideControls.style.display = 'none';
+                
+                // Reset states
+                document.querySelectorAll('.active-slide').forEach(el => el.classList.remove('active-slide'));
+                document.querySelectorAll('.active-section').forEach(el => el.classList.remove('active-section'));
+            }
+        }
+
+        function showSlide(index) {
+            if (index < 0) index = 0;
+            if (index >= slideElements.length) index = slideElements.length - 1;
+            currentSlide = index;
+
+            // Remove active classes
+            document.querySelectorAll('.active-slide').forEach(el => el.classList.remove('active-slide'));
+            document.querySelectorAll('.active-section').forEach(el => el.classList.remove('active-section'));
+
+            const currentEl = slideElements[currentSlide];
+            currentEl.classList.add('active-slide');
+
+            // Add active-section to its parent section to enable viewing it
+            const parentSection = currentEl.closest('section');
+            if (parentSection) {
+                parentSection.classList.add('active-section');
+            } else if (currentEl.tagName.toLowerCase() === 'header') {
+                currentEl.classList.add('active-section');
+            }
+
+            // Update buttons
+            document.getElementById('prev-btn').disabled = (currentSlide === 0);
+            document.getElementById('next-btn').disabled = (currentSlide === slideElements.length - 1);
+        }
+
+        function nextSlide() {
+            if (currentSlide < slideElements.length - 1) {
+                showSlide(currentSlide + 1);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                showSlide(currentSlide - 1);
+            }
+        }
+
+        // Add keyboard navigation for slides
+        document.addEventListener('keydown', (e) => {
+            if (isSlideMode) {
+                if (e.key === 'ArrowRight' || e.key === 'Space') {
+                    e.preventDefault();
+                    nextSlide();
+                } else if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    prevSlide();
+                } else if (e.key === 'Escape') {
+                    e.preventDefault();
+                    toggleSlideMode();
+                }
+            }
+        });
     </script>
 </body>
 
