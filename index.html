@@ -648,6 +648,7 @@
         };
 
         function switchLanguage(lang) {
+            document.documentElement.lang = lang; // Fixes CSS text-transform: uppercase for Turkish 'İ'
             document.querySelectorAll('[data-i18n]').forEach(element => {
                 const key = element.getAttribute('data-i18n');
                 if (translations[lang] && translations[lang][key]) {
@@ -664,20 +665,73 @@
         }
 
         function generatePDF() {
-            const body = document.body;
             const style = document.createElement('style');
-            style.innerHTML = `
-            @media print {
-                body { 
-                    -webkit-print-color-adjust: exact; 
-                    background-color: white !important;
-                    background-image: none !important;
+            
+            if (isSlideMode) {
+                style.innerHTML = `
+                @page { size: A4 landscape; margin: 0; }
+                @media print {
+                    body { 
+                        -webkit-print-color-adjust: exact !important; 
+                        background: #000000 !important;
+                    }
+                    .fixed-controls, .slide-controls { display: none !important; }
+                    .container { 
+                        width: 100vw !important; 
+                        max-width: none !important;
+                        margin: 0 !important; 
+                        padding: 0 !important;
+                        box-shadow: none !important; 
+                        border: none !important;
+                        background: none !important;
+                    }
+                    /* Force display all sections so slides exist in flow */
+                    .container > header, .container > section {
+                        display: block !important;
+                        height: auto !important;
+                        padding: 0 !important;
+                        margin: 0 !important;
+                    }
+                    /* Each slide becomes a dedicated page */
+                    .slide-element {
+                        display: flex !important;
+                        flex-direction: column !important;
+                        justify-content: center !important;
+                        align-items: center !important;
+                        width: 100vw !important;
+                        height: 100vh !important;
+                        page-break-after: always !important;
+                        break-after: page !important;
+                        background: #111827 !important;
+                        box-sizing: border-box !important;
+                        padding: 5vh 5vw !important;
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                        animation: none !important;
+                    }
+                    .slide-element:last-child {
+                        page-break-after: auto !important;
+                        break-after: auto !important;
+                    }
                 }
+                `;
+            } else {
+                style.innerHTML = `
+                @media print {
+                    body { 
+                        -webkit-print-color-adjust: exact; 
+                        background-color: white !important;
+                        background-image: none !important;
+                    }
+                }
+                `;
             }
-        `;
+            
             document.head.appendChild(style);
-            window.print();
-            document.head.removeChild(style);
+            setTimeout(() => {
+                window.print();
+                document.head.removeChild(style);
+            }, 100);
         }
 
         window.onload = function () {
@@ -699,6 +753,7 @@
             isSlideMode = !isSlideMode;
             const slideBtn = document.getElementById('slide-mode-btn');
             const slideControls = document.querySelector('.slide-controls');
+            const pdfBtn = document.getElementById('pdf-download-btn');
             
             if (!slideElements.length) {
                 // Collect granular slides
@@ -710,11 +765,20 @@
                 document.body.classList.add('slide-mode-active');
                 slideBtn.classList.add('active');
                 slideControls.style.display = 'flex';
+                
+                // Change PDF button to Slide Download
+                pdfBtn.innerHTML = '<i class="fa-solid fa-file-powerpoint"></i>';
+                pdfBtn.title = 'Download Presentation / Sunumu İndir';
+                
                 showSlide(0);
             } else {
                 document.body.classList.remove('slide-mode-active');
                 slideBtn.classList.remove('active');
                 slideControls.style.display = 'none';
+                
+                // Revert PDF button
+                pdfBtn.innerHTML = '<i class="fa-solid fa-file-pdf"></i>';
+                pdfBtn.title = 'Download PDF / PDF İndir';
                 
                 // Reset states
                 document.querySelectorAll('.active-slide').forEach(el => el.classList.remove('active-slide'));
