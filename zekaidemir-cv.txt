@@ -1,72 +1,54 @@
+ZEKAİ DEMİR | Senior Mobile Developer (Flutter / Kotlin / Swift)
+Pendik, Istanbul, Turkey | +90 505 971 36 74 | zekdemir1327@gmail.com
+GitHub: github.com/Demirzekk | StackOverflow: stackoverflow.com/users/14048442 | LinkedIn: linkedin.com/in/zekai-demir-aa028a126
 
-ZEKAİ DEMİR| Senior Flutter Developer
-Pendik, Istanbul, Turkey | +90 505 971 36 74 |zekdemir1327@gmail.com 
-github.com/Demirzekk |stackoverflow.com/users/14048442 | linkedin.com/in/zekai-demir-aa028a126
-Senior Flutter Developer with 5+ years of experience building secure, scalable mobile apps across Fintech, E-Commerce, and ERP sectors. Expert in Clean Architecture, state management (BLoC/Riverpod), and developing complex business tools. Proven track record of delivering pixel-perfect UI and high-performance solutions for iOS and Android.
+PROFESSIONAL SUMMARY
+Accomplished Senior Mobile Developer with 5+ years of experience engineering secure, scalable, and high-performance mobile applications across Fintech, E-Commerce, and ERP sectors. Expert in Flutter cross-platform development and native Android (Kotlin) / iOS (Swift) integrations. Strong advocate of Clean Architecture, MVVM, and solid state management (BLoC, Riverpod). Proven track record of designing custom native SDKs (.aar, .xcframework), implementing WebSockets for real-time trading systems, and securing applications against penetration test vulnerabilities.
+
 TECHNICAL SKILLS
-* Mobile Development: Flutter, Dart, Native Android/iOS integrations. Kotlin & Swift Native SDK development
-* State Management: BLoC, Riverpod 2.0, Provider, GetX.
-* Architecture & Design: Clean Architecture, MVVM, Dependency Injection (GetIt), Singleton Pattern.
-* Backend & Database: Firebase (Auth, Firestore, Analytics,Realtime DB), SQL, SQLite, RESTful APIs.
-* Tools & DevOps: Git, Git-Flow, CI/CD, JIRA, Figma, Zeplin, XCode, Android Studio.
-* Fintech & Security: AES Encryption, Biometric Authentication, Secure Storage, WebSocket
+* Mobile Development: Flutter, Dart, Android Native (Kotlin, Java), iOS Native (Swift, Objective-C), Platform Channels (Method/Event Channels), Native SDK Integration, Platform-Specific Bridges.
+* State Management: BLoC, Riverpod, Provider, GetX.
+* Architecture & Design: Clean Architecture, MVVM, SOLID Principles, Dependency Injection (GetIt), Singleton Pattern, Factory Pattern.
+* Security & Fintech: WebSockets (Real-time data streaming), TOTP/MFA Authentication, AES Encryption, Biometric Authentication, Secure Storage, Penetration Testing Remediation, SSL Pinning.
+* Backend & Databases: Firebase Suite (Auth, Firestore, Cloud Messaging, Analytics, Realtime DB), SQL, SQLite, RESTful APIs, JSON.
+* Tools & DevOps: Git, Git-Flow, CI/CD Pipelines, Xcode, Android Studio, JIRA, Figma, Zeplin, Postman.
+
 PROFESSIONAL EXPERIENCE
-Senior Flutter Developer | Optimus Yazılım Istanbul, Turkey | March 2023 – Present
-* Developed a White Label fintech mobile application with customizable architecture, enabling rapid distribution for various clients.
-* Implemented real-time data communication using WebSockets and integrated TradingView Advance Trading SDK.
-* Engineered a TOTP authenticator application and developed native SDKs (.aar and .xcframework) for seamless third-party integration.
-* Built a White Label RKYC application integrated with Aksis Axonboard, utilizing native platform channels for high-performance identity verification.
-* Encapsulated the RKYC solution into a reusable SDK compatible with multiple platforms (Kotlin, Swift, React Native), expanding the product's market reach.
-* Integrated Realtime Data Providers (Foreks, iDeal, and Matrix) to ensure accurate financial data streaming.
-* Resolved critical security vulnerabilities identified during Penetration Testing (Pentest) and optimized app performance to meet strict fintech security standards.
-Flutter Developer & Mentor | İstanbul Ticaret Odası- SoftITO Yazılım-Bilişim Akademisi Istanbul, Turkey | March 2023 – April 2023
-* Served as a Flutter Instructor for an intensive in-person mobile development bootcamp.
-* Mentored a group of 12 engineering students, providing concentrated training on Flutter and Firebase.
-* Guided students through the full development lifecycle, supervising the creation of their final capstone projects.
-Mid. Flutter Developer | Fimka IT A.Ş. Istanbul, Turkey | March 2021 – March 2023
-* Developed two distinct applications within the E-Commerce ecosystem: a Customer App for shopping and a Seller App for inventory and order management.
-* Built and deployed scalable cross-platform mobile applications from scratch using Flutter.
-* Transformed complex Figma designs into pixel-perfect, responsive Flutter widgets ensuring consistent UI/UX.
-* Managed complex application state utilizing BLoC and Provider patterns to ensure efficient data flow.
-* Integrated third-party SDKs and maintained existing codebases, focusing on bug fixes and feature enhancements.
-Technology Instructor | Deneyap Türkiye Istanbul, Turkey | April 2020 – May 2024
-* Instructed high school students in Mobile Application and Web Programming fundamentals.
-* Mentored students on algorithmic thinking and software development concepts, fostering the next generation of developers.
-System Network Administrator | Canakkale State Hospital Canakkale, Turkey | July 2017 – September 2017
-* Managed the hospital's system networks and provided IT infrastructure support during the internship period.
 
+Senior Mobile Developer | Optimus Yazılım
+Istanbul, Turkey | March 2023 – Present
+* Architected and developed a customizable White Label Fintech mobile application using Clean Architecture, enabling rapid rebranding and distribution for enterprise clients.
+* Implemented real-time financial market data communication via WebSockets (Foreks, iDeal, Matrix) and integrated the TradingView SDK for interactive charting.
+* Engineered custom native SDKs (.aar for Android/Kotlin and .xcframework for iOS/Swift) to deliver secure TOTP authentication features for third-party integrations.
+* Developed a White Label RKYC application integrated with Aksis Axonboard using native platform channels, and packaged it as a cross-platform SDK supporting Kotlin, Swift, and React Native.
+* Identified and resolved critical security vulnerabilities flagged during Penetration Testing (Pentest) by implementing advanced encryption (AES), secure storage, and SSL pinning.
 
+Mobile Developer & Mentor | İstanbul Ticaret Odası - SoftITO Yazılım Akademisi
+Istanbul, Turkey | March 2023 – April 2023
+* Instructed an intensive bootcamp and mentored 36 engineering students on Flutter architecture, native integrations, state management, and modern git-flow.
+* Supervised the full software development lifecycle of capstone projects, from initial wireframing to final App Store / Play Store deployment prep.
 
+Mid Mobile Developer | Fimka IT A.Ş.
+Istanbul, Turkey | March 2021 – March 2023
+* Developed and scaled high-traffic B2B/B2C Customer and Seller apps in the E-Commerce ecosystem with real-time stock/order management.
+* Built cross-platform mobile apps from scratch using Flutter, maintaining a clean, testable, and highly decoupled codebase.
+* Transformed complex Figma designs into responsive widgets and managed application states using BLoC and Provider to optimize performance.
+* Integrated third-party payment, analytics, and notification SDKs, while troubleshooting and resolving platform-specific (Android/iOS) build configurations.
 
+Technology Instructor | Deneyap Türkiye
+Istanbul, Turkey | April 2020 – May 2024
+* Taught Mobile Application Development and Web Programming fundamentals to high school students, mentoring teams in designing, coding, and debugging project-based apps.
 
-
-
-
-
-
-Freelance Mobile App Developer | Remote Global & Local Projects | 2019 – Present
-Delivered diverse mobile solutions ranging from ERP systems to Smart City integrations.
-Enterprise & Smart City: Developed "Kent Kart" integration apps for Şişli and Karşıyaka Municipalities. Built an ERP & Stock Control application for Balmy Cosmetics tailored for handheld terminals.
-Service & Utility: Created Take Taxi (local taxi-hailing app), Hesap Lütfen (digital menu sharing), and WinUp (White Label Gamification app).
-EdTech & Entertainment
-Nartest (TYT-AYT Exam Prep)
-Animo (Interactive Storybook for children)
-Falve (Fortune telling)
-Counter Event applications.
-Linqi App English Conversation practise app
-
-
-
-
-
-
-
+Freelance Mobile App Developer | Global & Local Projects
+2019 – Present
+* Enterprise & Smart City: Developed "Kent Kart" transit apps for Şişli and Karşıyaka Municipalities, and custom ERP/Inventory handheld systems for Balmy Cosmetics.
+* Consumer & Utilities: Designed and deployed Take Taxi (ride-hailing), Hesap Lütfen (digital menu), Falve (fortune), and Linqi (English practice) apps.
 
 EDUCATION
-Bachelor’s Degree in Management Information Systems Anadolu University | Faculty of Open Education
-Associate Degree in Computer Programming Canakkale Onsekiz Mart University | GPA: 3.12
-English Preparatory School Canakkale Onsekiz Mart University | 2015 – 2016
-
+* Bachelor’s Degree in Management Information Systems | Anadolu University | Faculty of Open Education
+* Associate Degree in Computer Programming | Canakkale Onsekiz Mart University | GPA: 3.12
+* English Preparatory School | Canakkale Onsekiz Mart University | 2015 – 2016
 
 LANGUAGES
 * English: Professional Working Proficiency (Reading/Writing)
+* Turkish: Native

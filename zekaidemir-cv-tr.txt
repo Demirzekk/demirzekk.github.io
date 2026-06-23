@@ -1,0 +1,54 @@
+ZEKAİ DEMİR | Kıdemli Mobil Uygulama Geliştirici (Flutter / Kotlin / Swift)
+Pendik, İstanbul, Türkiye | +90 505 971 36 74 | zekdemir1327@gmail.com
+GitHub: github.com/Demirzekk | StackOverflow: stackoverflow.com/users/14048442 | LinkedIn: linkedin.com/in/zekai-demir-aa028a126
+
+PROFESYONEL ÖZET
+Fintech, E-Ticaret ve ERP sektörlerinde 5 yılı aşkın süredir güvenli, ölçeklenebilir ve yüksek performanslı mobil uygulamalar geliştiren kıdemli bir Mobil Geliştiriciyim. Flutter çapraz platform geliştirme ve native Android (Kotlin) / iOS (Swift) entegrasyonlarında uzmanlaştım. Clean Architecture, MVVM ve modern durum yönetimi (BLoC, Riverpod) yaklaşımlarını uyguluyorum. Özel native SDK (.aar, .xcframework) tasarlama, finansal borsa sistemleri için WebSocket entegrasyonu sağlama ve sızma testleri (Pentest) sonucu oluşan güvenlik açıklarını giderme konularında geniş deneyime sahibim.
+
+TEKNİK YETKİNLİKLER
+* Mobil Geliştirme: Flutter, Dart, Native Android (Kotlin, Java), Native iOS (Swift, Objective-C), Platform Kanalları (Method/Event Channels), Native SDK Entegrasyonu, Çapraz Platform Köprüleri.
+* Durum Yönetimi: BLoC, Riverpod, Provider, GetX.
+* Mimari & Tasarım: Clean Architecture, MVVM, SOLID Prensipleri, Dependency Injection (GetIt), Tasarım Şablonları (Singleton, Factory).
+* Güvenlik & Fintech: WebSockets (Gerçek zamanlı veri akışları), TOTP/MFA Doğrulama, AES Şifreleme, Biyometrik Kimlik Doğrulama, Güvenli Veri Depolama, Sızma Testleri Güvenlik Açıklarının Giderilmesi, SSL Pinning.
+* Backend & Veritabanı: Firebase Suite (Auth, Firestore, Cloud Messaging, Analytics, Realtime DB), SQL, SQLite, RESTful API'ler, JSON.
+* Araçlar & DevOps: Git, Git-Flow, CI/CD Süreçleri, Xcode, Android Studio, JIRA, Figma, Zeplin, Postman.
+
+MESLEKİ DENEYİM
+
+Kıdemli Mobil Geliştirici | Optimus Yazılım
+İstanbul, Türkiye | Mart 2023 – Günümüz
+* Kurumsal müşteriler için hızlı dağıtım ve yeniden markalama sağlayan, Clean Architecture tabanlı, özelleştirilebilir bir White Label Fintech mobil uygulammasının mimarisini kurdum ve geliştirdim.
+* WebSocket üzerinden Foreks, iDeal ve Matrix gibi servislerle gerçek zamanlı finansal veri iletişimini sağladım ve TradingView SDK entegrasyonu gerçekleştirdim.
+* Üçüncü taraf entegrasyonları için güvenli TOTP kimlik doğrulama özelliklerine sahip native SDK'lar (Android/Kotlin için .aar ve iOS/Swift için .xcframework) hazırladım.
+* Aksis Axonboard entegreli White Label RKYC uygulamasını Kotlin ve Swift ile native platform kanallarını kullanarak geliştirdim ve native Kotlin, native Swift ile React Native destekli bir SDK olarak paketledim.
+* Sızma Testleri (Pentest) sırasında tespit edilen kritik güvenlik açıklarını; gelişmiş şifreleme (AES), güvenli veri depolama ve SSL pinning uygulayarak giderdim.
+
+Mobil Geliştirici & Mentor | İstanbul Ticaret Odası - SoftITO Yazılım Akademisi
+İstanbul, Türkiye | Mart 2023 – Nisan 2023
+* Flutter mimarisi, native entegrasyonlar ve durum yönetimi üzerine yoğun bir bootcamp düzenleyerek 36 mühendislik öğrencisine mentorluk ve eğitmenlik yaptım.
+* Öğrencilerin bitirme projelerinin tel çerçevelerden (wireframe) uygulama mağazası yayınlama hazırlıklarına kadar tüm yazılım yaşam döngüsünü yönettim.
+
+Mobil Geliştirici | Fimka IT A.Ş.
+İstanbul, Türkiye | Mart 2021 – Mart 2023
+* E-Ticaret ekosisteminde yüksek trafikli B2B/B2C Müşteri ve gerçek zamanlı envanter/sipariş takibi yapan Satıcı uygulamalarını geliştirdim ve ölçeklendirdim.
+* Test edilebilir, temiz ve modüler bir kod yapısı koruyarak Flutter ile sıfırdan çapraz platform mobil uygulamalar oluşturdum.
+* Karmaşık Figma tasarımlarını duyarlı bileşenlere dönüştürdüm ve BLoC/Provider kullanarak uygulama performansını optimize ettim.
+* Üçüncü taraf ödeme, analiz ve bildirim SDK'larını entegre ettim; Android/iOS platformlarına özel derleme ve altyapı sorunlarını çözdüm.
+
+Teknoloji Eğitmeni | Deneyap Türkiye
+İstanbul, Türkiye | Nisan 2020 – Mayıs 2024
+* Lise öğrencilerine bilgisayarsal düşünme becerilerini geliştiren Mobil Uygulama ve Web Programlama temellerini öğrettim ve proje takımlarına mentorluk yaptım.
+
+Freelance Mobil Uygulama Geliştirici | Global & Yerel Projeler
+2019 – Günümüz
+* Kurumsal & Akıllı Şehir: Şişli ve Karşıyaka Belediyeleri için toplu taşıma takip uygulamaları geliştirdim; Balmy Kozmetik için el terminalleri ile entegre envanter ve ERP sistemleri kurdum.
+* Bireysel & Servis: Take Taxi (taksi çağırma), Hesap Lütfen (dijital menü), Falve (kahve falı) ve Linqi App (İngilizce pratik) uygulamalarının tasarım, geliştirme ve yayın süreçlerini yönettim.
+
+EĞİTİM
+* Yönetim Bilişim Sistemleri Lisans Derecesi | Anadolu Üniversitesi | Açıköğretim Fakültesi
+* Bilgisayar Programcılığı Önlisans Derecesi | Çanakkale Onsekiz Mart Üniversitesi | GANO: 3.12
+* İngilizce Hazırlık Sınıfı | Çanakkale Onsekiz Mart Üniversitesi | 2015 – 2016
+
+DİLLER
+* Türkçe: Anadil
+* İngilizce: Profesyonel Çalışma Yetkinliği (Okuma/Yazma)

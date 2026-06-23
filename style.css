@@ -1080,8 +1080,8 @@ body.slide-mode-active .reference-contact {
 /* Print Optimization - Flat Colors for PDF */
 @media print {
   @page {
-    margin: 10mm;
-    /* Standard margin for clean printing */
+    margin: 8mm 10mm;
+    /* Compact margin for clean printing */
     size: auto;
   }
 
@@ -1090,8 +1090,8 @@ body.slide-mode-active .reference-contact {
     print-color-adjust: exact !important;
     background: white !important;
     padding: 0 !important;
-    font-size: 10pt;
-    /* Slightly larger for better readability */
+    font-size: 9.2pt !important;
+    line-height: 1.35 !important;
   }
 
   /* Completely Hide Interactive Elements & Controls */
@@ -1101,13 +1101,16 @@ body.slide-mode-active .reference-contact {
   .slide-controls,
   #slide-mode-btn,
   #pdf-download-btn,
-  #ats-download-btn {
+  #ats-download-btn,
+  .print-hide {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
     height: 0 !important;
     width: 0 !important;
     position: absolute !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .container {
@@ -1127,9 +1130,9 @@ body.slide-mode-active .reference-contact {
     print-color-adjust: exact !important;
     background: #0f3460 !important;
     border-radius: 0;
-    padding: 20px 30px !important;
+    padding: 15px 20px !important;
     /* Balanced padding */
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     text-align: left !important;
     /* Left align for professional look */
     align-items: flex-start !important;
@@ -1137,7 +1140,7 @@ body.slide-mode-active .reference-contact {
 
   header.header-centered .header-left {
     text-align: left !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 5px !important;
   }
 
   header.header-centered .header-right {
@@ -1155,8 +1158,8 @@ body.slide-mode-active .reference-contact {
     -webkit-text-fill-color: white !important;
     color: white !important;
     text-shadow: none !important;
-    font-size: 24pt !important;
-    margin: 0 0 5px 0 !important;
+    font-size: 20pt !important;
+    margin: 0 0 3px 0 !important;
   }
 
   header.header-centered .header-left h2 {
@@ -1164,7 +1167,7 @@ body.slide-mode-active .reference-contact {
     -webkit-text-fill-color: #93c5fd !important;
     /* Lighter blue for contrast */
     color: #93c5fd !important;
-    font-size: 12pt !important;
+    font-size: 11pt !important;
     letter-spacing: 1px !important;
     margin: 0 !important;
   }
@@ -1174,20 +1177,21 @@ body.slide-mode-active .reference-contact {
     border: none !important;
     color: white !important;
     padding: 0 !important;
-    margin: 0 15px 5px 0 !important;
+    margin: 0 12px 3px 0 !important;
     display: inline-flex !important;
+    font-size: 8.5pt !important;
   }
 
   .contact-row {
     justify-content: flex-start !important;
-    gap: 15px !important;
-    margin-top: 10px !important;
+    gap: 10px !important;
+    margin-top: 5px !important;
   }
 
   .social-row {
     justify-content: flex-start !important;
-    gap: 15px !important;
-    margin-top: 5px !important;
+    gap: 10px !important;
+    margin-top: 3px !important;
   }
 
   .header-right i {
@@ -1199,23 +1203,23 @@ body.slide-mode-active .reference-contact {
   .job-item,
   .skills,
   .education,
-  .languages,
-  .references {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+  .languages {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 
   /* Summary - Clean Layout */
   .summary {
     background: white !important;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: none !important;
     padding-top: 0 !important;
-    padding-bottom: 20px !important;
-    margin: 0 0 20px 0 !important;
+    padding-bottom: 10px !important;
+    margin: 0 0 10px 0 !important;
   }
 
   .summary p {
     text-align: justify;
+    font-size: 9.2pt !important;
   }
 
   .summary strong {
@@ -1224,21 +1228,21 @@ body.slide-mode-active .reference-contact {
 
   /* Section Titles */
   h3.section-title {
-    font-size: 11pt !important;
+    font-size: 10pt !important;
     margin-top: 5px !important;
-    margin-bottom: 15px !important;
-    padding-left: 30px !important;
+    margin-bottom: 10px !important;
+    padding-left: 10px !important;
     /* Visual alignment with content */
     color: #0f3460 !important;
     border-bottom: 2px solid #e2e8f0;
-    padding-bottom: 5px;
-    margin-right: 30px !important;
+    padding-bottom: 3px;
+    margin-right: 10px !important;
   }
 
   h3.section-title::before {
     background: #0f3460 !important;
     height: 100% !important;
-    width: 5px !important;
+    width: 4px !important;
   }
 
   /* Job Items - Clean List Style */
@@ -1246,10 +1250,12 @@ body.slide-mode-active .reference-contact {
     background: white !important;
     box-shadow: none !important;
     border: none !important;
-    border-bottom: 1px solid #e2e8f0 !important;
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
-    margin-bottom: 10px !important;
+    border-bottom: none !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin-bottom: 8px !important;
   }
 
   .job-item::before {
@@ -1261,16 +1267,56 @@ body.slide-mode-active .reference-contact {
   }
 
   .job-header {
-    margin-bottom: 8px !important;
+    margin-bottom: 4px !important;
   }
 
   .job-title {
     color: #000 !important;
-    font-size: 11pt !important;
+    font-size: 9.5pt !important;
+  }
+
+  .job-meta {
+    font-size: 8pt !important;
+    padding: 2px 8px !important;
+  }
+
+  .job-details li {
+    font-size: 9pt !important;
+    margin-bottom: 4px !important;
+    padding-left: 15px !important;
   }
 
   .job-details li::before {
     background: #0f3460 !important;
+    top: 7px !important;
+    width: 4px !important;
+    height: 4px !important;
+  }
+
+  /* Technical Skills - 2 Column Grid for space savings */
+  .skills {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 6px 20px !important;
+  }
+
+  .skills h3.section-title {
+    grid-column: span 2 !important;
+  }
+
+  .skill-category {
+    margin-bottom: 0 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .category-title {
+    font-size: 8pt !important;
+    margin-bottom: 4px !important;
+  }
+
+  .skills-grid {
+    gap: 4px !important;
   }
 
   /* Skill Tags - Minimalist */
@@ -1282,55 +1328,50 @@ body.slide-mode-active .reference-contact {
     border: 1px solid #cbd5e1 !important;
     color: #0f3460 !important;
     font-weight: 600 !important;
-    padding: 2px 8px !important;
+    padding: 1px 6px !important;
+    font-size: 8pt !important;
   }
 
-  /* Education Items */
+  /* Education Items - 2 Column Layout */
+  .education {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0 20px !important;
+  }
+
+  .education h3.section-title {
+    grid-column: span 2 !important;
+  }
+
   .education-item {
     background: white !important;
     border: none !important;
-    border-bottom: 1px solid #e2e8f0 !important;
-    padding: 10px 30px !important;
-    margin: 0 !important;
-  }
-
-  .education-item:last-child {
     border-bottom: none !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin: 0 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
   .education-item:hover {
     transform: none !important;
   }
 
+  .degree {
+    font-size: 9pt !important;
+  }
+
+  .school {
+    font-size: 8pt !important;
+  }
+
   /* Languages */
   .languages .skills-grid .skill-tag {
     background: white !important;
     border: 1px solid #cbd5e1 !important;
-  }
-
-  /* References */
-  .references-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 15px !important;
-  }
-
-  .reference-item {
-    background: white !important;
-    border: 1px solid #cbd5e1 !important;
-    padding: 15px !important;
-  }
-
-  .reference-item:hover {
-    transform: none !important;
-    box-shadow: none !important;
-  }
-
-  .reference-name {
-    color: #000 !important;
-  }
-
-  .reference-contact {
-    color: #0f3460 !important;
   }
 
   /* Links */
@@ -1348,7 +1389,7 @@ body.slide-mode-active .reference-contact {
 
   section {
     padding: 0 !important;
-    margin-bottom: 25px !important;
+    margin-bottom: 12px !important;
     border: none !important;
     break-inside: auto !important;
   }
