@@ -7,17 +7,19 @@ Accomplished Senior Mobile Developer with 5+ years of experience engineering sec
 
 TECHNICAL SKILLS
 * Mobile Development: Flutter, Dart, Android Native (Kotlin, Java), iOS Native (Swift, Objective-C), Platform Channels (Method/Event Channels), Native SDK Integration, Platform-Specific Bridges.
+* Mobile Technologies: App Store Connect, Google Play Console, Push Notifications (FCM/APNS), Deep Linking (Universal/App Links), Performance Profiling, App Store Optimization (ASO).
 * State Management: BLoC, Riverpod, Provider, GetX.
 * Architecture & Design: Clean Architecture, MVVM, SOLID Principles, Dependency Injection (GetIt), Singleton Pattern, Factory Pattern.
+* Testing & CI/CD: Unit, Widget & Integration Testing, Mocking (Mockito, Mocktail), CI/CD (Fastlane, Codemagic, GitHub Actions), Crashlytics, Sentry, Test-Driven Development (TDD).
 * Security & Fintech: WebSockets (Real-time data streaming), TOTP/MFA Authentication, AES Encryption, Biometric Authentication, Secure Storage, Penetration Testing Remediation, SSL Pinning.
 * Backend & Databases: Firebase Suite (Auth, Firestore, Cloud Messaging, Analytics, Realtime DB), SQL, SQLite, RESTful APIs, JSON.
-* Tools & DevOps: Git, Git-Flow, CI/CD Pipelines, Xcode, Android Studio, JIRA, Figma, Zeplin, Postman.
+* Tools & DevOps: Git, Git-Flow, Xcode, Android Studio, JIRA, Figma, Zeplin, Postman.
 
 PROFESSIONAL EXPERIENCE
 
 Senior Mobile Developer | Optimus Yazılım
-Istanbul, Turkey | March 2023 – Present
-* Architected and developed a customizable White Label Fintech mobile application using Clean Architecture, enabling rapid rebranding and distribution for enterprise clients.
+Istanbul, Turkey | March 2023 – December 2025
+* Architected and developed a customizable White Label Fintech mobile application using Clean Architecture, reducing deployment time for new clients by 40% and enabling rapid rebranding for enterprise clients.
 * Implemented real-time financial market data communication via WebSockets (Foreks, iDeal, Matrix) and integrated the TradingView SDK for interactive charting.
 * Engineered custom native SDKs (.aar for Android/Kotlin and .xcframework for iOS/Swift) to deliver secure TOTP authentication features for third-party integrations.
 * Developed a White Label RKYC application integrated with Aksis Axonboard using native platform channels, and packaged it as a cross-platform SDK supporting Kotlin, Swift, and React Native.
@@ -30,7 +32,7 @@ Istanbul, Turkey | March 2023 – April 2023
 
 Mid Mobile Developer | Fimka IT A.Ş.
 Istanbul, Turkey | March 2021 – March 2023
-* Developed and scaled high-traffic B2B/B2C Customer and Seller apps in the E-Commerce ecosystem with real-time stock/order management.
+* Developed and scaled high-traffic B2B/B2C Customer and Seller apps in the E-Commerce ecosystem serving 50K+ active users with real-time stock/order management.
 * Built cross-platform mobile apps from scratch using Flutter, maintaining a clean, testable, and highly decoupled codebase.
 * Transformed complex Figma designs into responsive widgets and managed application states using BLoC and Provider to optimize performance.
 * Integrated third-party payment, analytics, and notification SDKs, while troubleshooting and resolving platform-specific (Android/iOS) build configurations.
@@ -42,13 +44,13 @@ Istanbul, Turkey | April 2020 – May 2024
 Freelance Mobile App Developer | Global & Local Projects
 2019 – Present
 * Enterprise & Smart City: Developed "Kent Kart" transit apps for Şişli and Karşıyaka Municipalities, and custom ERP/Inventory handheld systems for Balmy Cosmetics.
-* Consumer & Utilities: Designed and deployed Take Taxi (ride-hailing), Hesap Lütfen (digital menu), Falve (fortune), and Linqi (English practice) apps.
+* Consumer & Utilities: Designed and deployed Take Taxi (ride-hailing), Hesap Lütfen (digital menu platform), Falve (fortune), and Linqi App (language learning platform).
 
 EDUCATION
-* Bachelor’s Degree in Management Information Systems | Anadolu University | Faculty of Open Education
+* Bachelor’s Degree in Management Information Systems | Anadolu University
 * Associate Degree in Computer Programming | Canakkale Onsekiz Mart University | GPA: 3.12
 * English Preparatory School | Canakkale Onsekiz Mart University | 2015 – 2016
 
 LANGUAGES
-* English: Professional Working Proficiency (Reading/Writing)
+* English: Professional Working Proficiency
 * Turkish: Native

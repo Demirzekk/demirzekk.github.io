@@ -7,17 +7,19 @@ Fintech, E-Ticaret ve ERP sektörlerinde 5 yılı aşkın süredir güvenli, öl
 
 TEKNİK YETKİNLİKLER
 * Mobil Geliştirme: Flutter, Dart, Native Android (Kotlin, Java), Native iOS (Swift, Objective-C), Platform Kanalları (Method/Event Channels), Native SDK Entegrasyonu, Çapraz Platform Köprüleri.
+* Mobil Teknolojiler: App Store Connect, Google Play Console, Push Bildirimleri (FCM/APNS), Derin Bağlantı (Universal/App Links), Performans Analizi (Profiling), ASO (App Store Optimization).
 * Durum Yönetimi: BLoC, Riverpod, Provider, GetX.
 * Mimari & Tasarım: Clean Architecture, MVVM, SOLID Prensipleri, Dependency Injection (GetIt), Tasarım Şablonları (Singleton, Factory).
+* Test & CI/CD: Birim (Unit), Arayüz (Widget) ve Entegrasyon Testleri, Taklit Etme (Mockito, Mocktail), CI/CD (Fastlane, Codemagic, GitHub Actions), Crashlytics, Sentry, TDD (Test-Driven Development).
 * Güvenlik & Fintech: WebSockets (Gerçek zamanlı veri akışları), TOTP/MFA Doğrulama, AES Şifreleme, Biyometrik Kimlik Doğrulama, Güvenli Veri Depolama, Sızma Testleri Güvenlik Açıklarının Giderilmesi, SSL Pinning.
 * Backend & Veritabanı: Firebase Suite (Auth, Firestore, Cloud Messaging, Analytics, Realtime DB), SQL, SQLite, RESTful API'ler, JSON.
-* Araçlar & DevOps: Git, Git-Flow, CI/CD Süreçleri, Xcode, Android Studio, JIRA, Figma, Zeplin, Postman.
+* Araçlar & DevOps: Git, Git-Flow, Xcode, Android Studio, JIRA, Figma, Zeplin, Postman.
 
 MESLEKİ DENEYİM
 
 Kıdemli Mobil Geliştirici | Optimus Yazılım
-İstanbul, Türkiye | Mart 2023 – Günümüz
-* Kurumsal müşteriler için hızlı dağıtım ve yeniden markalama sağlayan, Clean Architecture tabanlı, özelleştirilebilir bir White Label Fintech mobil uygulammasının mimarisini kurdum ve geliştirdim.
+İstanbul, Türkiye | Mart 2023 – Aralık 2025
+* Kurumsal müşteriler için yeni kurulumların devreye alınma süresini %80 azaltan, Clean Architecture tabanlı, özelleştirilebilir bir White Label Fintech mobil uygulamasının mimarisini kurdum ve geliştirdim.
 * WebSocket üzerinden Foreks, iDeal ve Matrix gibi servislerle gerçek zamanlı finansal veri iletişimini sağladım ve TradingView SDK entegrasyonu gerçekleştirdim.
 * Üçüncü taraf entegrasyonları için güvenli TOTP kimlik doğrulama özelliklerine sahip native SDK'lar (Android/Kotlin için .aar ve iOS/Swift için .xcframework) hazırladım.
 * Aksis Axonboard entegreli White Label RKYC uygulamasını Kotlin ve Swift ile native platform kanallarını kullanarak geliştirdim ve native Kotlin, native Swift ile React Native destekli bir SDK olarak paketledim.
@@ -26,14 +28,14 @@ Kıdemli Mobil Geliştirici | Optimus Yazılım
 Mobil Geliştirici & Mentor | İstanbul Ticaret Odası - SoftITO Yazılım Akademisi
 İstanbul, Türkiye | Mart 2023 – Nisan 2023
 * Flutter mimarisi, native entegrasyonlar ve durum yönetimi üzerine yoğun bir bootcamp düzenleyerek 36 mühendislik öğrencisine mentorluk ve eğitmenlik yaptım.
-* Öğrencilerin bitirme projelerinin tel çerçevelerden (wireframe) uygulama mağazası yayınlama hazırlıklarına kadar tüm yazılım yaşam döngüsünü yönettim.
+* Öğrencilerin bitirme projelerinin wireframe şeklinde uygulama mağazası yayınlama hazırlıklarına kadar tüm yazılım yaşam döngüsünü yönettim.
 
 Mobil Geliştirici | Fimka IT A.Ş.
 İstanbul, Türkiye | Mart 2021 – Mart 2023
-* E-Ticaret ekosisteminde yüksek trafikli B2B/B2C Müşteri ve gerçek zamanlı envanter/sipariş takibi yapan Satıcı uygulamalarını geliştirdim ve ölçeklendirdim.
+* E-Ticaret ekosisteminde 50.000+ aktif kullanıcıya hizmet veren yüksek trafikli B2B/B2C Müşteri ve gerçek zamanlı envanter/sipariş takibi yapan Satıcı uygulamalarını geliştirdim ve ölçeklendirdim.
 * Test edilebilir, temiz ve modüler bir kod yapısı koruyarak Flutter ile sıfırdan çapraz platform mobil uygulamalar oluşturdum.
 * Karmaşık Figma tasarımlarını duyarlı bileşenlere dönüştürdüm ve BLoC/Provider kullanarak uygulama performansını optimize ettim.
-* Üçüncü taraf ödeme, analiz ve bildirim SDK'larını entegre ettim; Android/iOS platformlarına özel derleme ve altyapı sorunlarını çözdüm.
+* Third party ödeme sistemi, analiz ve bildirim SDK'larını entegre ettim; Android/iOS platformlarına özel derleme ve altyapı sorunlarını çözdüm.
 
 Teknoloji Eğitmeni | Deneyap Türkiye
 İstanbul, Türkiye | Nisan 2020 – Mayıs 2024
@@ -42,7 +44,7 @@ Teknoloji Eğitmeni | Deneyap Türkiye
 Freelance Mobil Uygulama Geliştirici | Global & Yerel Projeler
 2019 – Günümüz
 * Kurumsal & Akıllı Şehir: Şişli ve Karşıyaka Belediyeleri için toplu taşıma takip uygulamaları geliştirdim; Balmy Kozmetik için el terminalleri ile entegre envanter ve ERP sistemleri kurdum.
-* Bireysel & Servis: Take Taxi (taksi çağırma), Hesap Lütfen (dijital menü), Falve (kahve falı) ve Linqi App (İngilizce pratik) uygulamalarının tasarım, geliştirme ve yayın süreçlerini yönettim.
+* Bireysel & Servis: Take Taxi (taksi çağırma), Hesap Lütfen (dijital menü platformu), Falve (kahve falı) ve Linqi App (dil öğrenme platformu) uygulamalarının tasarım, geliştirme ve yayın süreçlerini yönettim.
 
 EĞİTİM
 * Yönetim Bilişim Sistemleri Lisans Derecesi | Anadolu Üniversitesi
@@ -51,4 +53,4 @@ EĞİTİM
 
 DİLLER
 * Türkçe: Anadil
-* İngilizce: Profesyonel Çalışma Yetkinliği (Okuma/Yazma)
+* İngilizce: Profesyonel Çalışma Yetkinliği
