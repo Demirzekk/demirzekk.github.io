@@ -1,0 +1,57 @@
+ZEKAİ DEMİR | Senior iOS Developer
+Pendik, Istanbul, Turkey | +90 505 971 36 74 | zekdemir1327@gmail.com
+GitHub: github.com/Demirzekk | StackOverflow: stackoverflow.com/users/14048442 | LinkedIn: linkedin.com/in/zekai-demir-aa028a126
+
+PROFESSIONAL SUMMARY
+Accomplished Senior iOS Developer with 5+ years of experience engineering secure, scalable, and high-performance native iOS applications across Fintech, E-Commerce, and enterprise ecosystems. Deep expertise in Swift, UIKit, and modern SwiftUI, utilizing reactive paradigms (Combine, Swift Concurrency/async-await) and modular architectures (MVVM-C, VIPER, Clean Swift). Proven track record of developing closed-source native iOS SDKs (.xcframework), low-latency WebSocket streaming pipelines for financial trading systems, hardware-backed security (Keychain, Biometrics), and strict SSL/TLS Pinning. Highly proficient in test automation (XCTest, XCUITest), CI/CD pipelines (Fastlane, TestFlight), and deep performance profiling with Xcode Instruments (Leaks, Allocations, Time Profiler).
+
+TECHNICAL SKILLS
+* Core Languages & Frameworks: Swift (5.x/6), Objective-C, SwiftUI, UIKit, Foundation, Combine, Swift Concurrency (async/await, Actors, TaskGroups).
+* Architecture & Design Patterns: MVVM + Coordinator (MVVM-C), Clean Swift (VIP), VIPER, Modular Monorepo Architecture (SPM-driven), Dependency Injection, SOLID Principles, GoF Patterns (Factory, Adapter, Observer, Builder).
+* SDK Engineering & Dependency Management: Custom .xcframework Production & Distribution, Swift Package Manager (SPM), CocoaPods, Binary Target Integration, Native Bridge & Platform Channels (Flutter/React Native to Swift).
+* Security, Cryptography & Fintech: LocalAuthentication (Face ID / Touch ID), Keychain Services, CryptoKit (AES-GCM, SHA-256), SSL/TLS Public Key Pinning (Network.framework, URLSessionDelegate), TOTP/MFA Generation, Penetration Testing Remediation, Jailbreak Detection.
+* Networking & Persistence: URLSession, WebSockets (Real-time Market Data Feeds), RESTful APIs, Codable/Decodable, CoreData, SwiftData, Realm, UserDefaults.
+* Automated Testing & QA: XCTest (Unit Testing), XCUITest (UI Automation), Test-Driven Development (TDD), Mocking/Stubbing Protocols, Code Coverage Analysis.
+* Profiling & Memory Management: Xcode Instruments (Time Profiler, Memory Leaks, Allocations, Energy Impact), ARC (Automatic Reference Counting), Retain Cycle Diagnosis, Main Thread & 60 FPS Render Optimization.
+* CI/CD, DevOps & App Lifecycle: Fastlane (Match, Gym, Scan, Pilot), App Store Connect API, TestFlight Automated Deployment, GitHub Actions, Codemagic, Sentry, Firebase Crashlytics & Analytics, Apple Push Notification service (APNs), StoreKit (In-App Purchases).
+
+PROFESSIONAL EXPERIENCE
+
+Senior iOS / Mobile Developer | Optimus Yazılım
+Istanbul, Turkey | March 2023 – December 2025
+* Architected and developed the native iOS core of a customizable White Label Fintech application using Clean Architecture and MVVM-C, reducing enterprise onboarding and deployment time by 80%.
+* Implemented low-latency, real-time financial market streaming via URLSessionWebSocketTask and Combine for Tier-1 data providers (Foreks, iDeal, Matrix); integrated the TradingView iOS SDK for interactive charting.
+* Engineered a closed-source, zero-dependency native Swift SDK (.xcframework) delivering hardware-backed TOTP authentication for third-party corporate integrations, distributed via SPM and CocoaPods.
+* Developed the native iOS engine for a White Label Remote KYC (RKYC) verification module integrated with Aksis Axonboard, optimizing camera capture, NFC chip passport reading, and liveness detection.
+* Remediated all critical security vulnerabilities identified in independent Penetration Tests (Pentest) using Security.framework, Keychain wrappers, CryptoKit AES encryption, and dynamic SSL Pinning.
+* Built end-to-end automated Fastlane pipelines for code signing (match), automated test execution (XCTest/Scan), and daily TestFlight release distribution, slashing release cycles from weeks to hours.
+
+Mobile Developer & iOS Mentor | Istanbul Chamber of Commerce - SoftITO Software Academy
+Istanbul, Turkey | March 2023 – April 2023
+* Instructed an intensive bootcamp and mentored 36 engineering graduates on mobile software craftsmanship, Clean Architecture, iOS platform fundamentals, state management, and Git-Flow workflows.
+* Supervised student capstone projects, enforcing testability, dependency injection, Instruments leak profiling, and App Store submission guidelines.
+
+Mobile / iOS Developer | Fimka IT A.Ş.
+Istanbul, Turkey | March 2021 – March 2023
+* Engineered and scaled native iOS applications for high-traffic B2B/B2C E-Commerce platforms serving 50K+ active users with real-time inventory and order processing.
+* Built fluid, pixel-perfect user interfaces using UIKit (Auto Layout) and SwiftUI components; minimized overdraw and memory footprints using Xcode Instruments.
+* Integrated enterprise payment gateways, background APNs pushes, deep linking (Universal Links), and ensured compliance with iOS 14+ IDFA / App Tracking Transparency (ATT) policies.
+* Designed robust networking, intelligent cache management, and local offline-first storage layers utilizing CoreData and Keychain Services.
+
+Technology Instructor | Deneyap Turkey
+Istanbul, Turkey | April 2020 – May 2024
+* Taught algorithmic logic, mobile app development fundamentals, and modern software lifecycle practices to high school students, coaching teams in national technology hackathons.
+
+Freelance iOS & Mobile App Developer | Global & Local Projects
+2019 – Present
+* Enterprise & Smart Cities: Built iOS map and real-time fleet tracking interfaces (CoreLocation, MapKit) for transit systems across Şişli and Karşıyaka Municipalities; engineered handheld barcode/inventory ERP clients.
+* Consumer Apps: Spearheaded architecture, StoreKit in-app purchases, and App Store deployments for Take Taxi (ride-hailing), Hesap Lütfen (QR order/pay platform), Falve, and Linqi App (language learning).
+
+EDUCATION
+* Bachelor’s Degree in Management Information Systems | Anadolu University
+* Associate Degree in Computer Programming | Canakkale Onsekiz Mart University | GPA: 3.12
+* English Preparatory School | Canakkale Onsekiz Mart University | 2015 – 2016
+
+LANGUAGES
+* English: Professional Working Proficiency (Technical documentation, architecture discussions, cross-border team collaboration)
+* Turkish: Native

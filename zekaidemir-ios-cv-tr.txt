@@ -1,0 +1,57 @@
+ZEKAİ DEMİR | Kıdemli iOS Geliştirici (Senior iOS Developer)
+Pendik, İstanbul, Türkiye | +90 505 971 36 74 | zekdemir1327@gmail.com
+GitHub: github.com/Demirzekk | StackOverflow: stackoverflow.com/users/14048442 | LinkedIn: linkedin.com/in/zekai-demir-aa028a126
+
+PROFESYONEL ÖZET
+Fintech, E-Ticaret ve kurumsal mobil ekosistemlerde 5+ yıldır yüksek güvenlikli, ölçeklenebilir ve kurumsal seviyede native iOS uygulamaları geliştiren Kıdemli iOS Geliştiriciyim. Swift, UIKit ve modern SwiftUI ile reaktif (Combine, Swift Concurrency/async-await) ve modüler mimariler (MVVM-C, VIPER, Clean Swift) kurgulama konusunda derin uzmanlığa sahibim. Finansal borsa sistemleri için düşük gecikmeli WebSocket veri hatları, kurumsal entegrasyonlar için kapalı kaynak native iOS SDK'ları (.xcframework), biometrik kimlik doğrulama, SSL Pinning ve Keychain tabanlı donanımsal güvenlik çözümleri ürettim. XCTest ve XCUITest ile test otomasyonu kurma, Fastlane tabanlı CI/CD boru hatları inşa etme ve Instruments (Leaks, Allocations, Time Profiler) ile bellek/performans optimizasyonu gerçekleştirme konularında kanıtlanmış bir sicile sahibim.
+
+TEKNİK YETKİNLİKLER
+* Temel Diller & Çerçeveler: Swift (5.x/6), Objective-C, SwiftUI, UIKit, Foundation, Combine, Swift Concurrency (async/await, Actors, TaskGroups).
+* Mimari & Tasarım Şablonları: MVVM + Coordinator (MVVM-C), Clean Swift (VIP), VIPER, Modular Architecture (SPM tabanlı modüler monorepo), Dependency Injection, SOLID, Design Patterns (Factory, Adapter, Observer, Builder).
+* SDK Geliştirme & Paket Yönetimi: Custom .xcframework Üretimi & Dağıtımı, Swift Package Manager (SPM), CocoaPods, Binary Target Yönetimi, Platform Köprüleri (Flutter/React Native Native Bridge - Method/Event Channels).
+* Güvenlik, Kripto & Fintech: LocalAuthentication (Face ID / Touch ID), Keychain Services, CryptoKit (AES-GCM, SHA-256), SSL/TLS Public Key Pinning, TOTP/MFA Üretimi, Sızma Testi (Pentest) Açıklarının Kapatılması, Jailbreak Tespiti.
+* Ağ & Veri Yönetimi: URLSession, WebSockets (Gerçek Zamanlı Piyasa Veri Akışı), RESTful API, Decodable/Encodable, CoreData, SwiftData, Realm, UserDefaults.
+* Test Otomasyonu & Kalite: XCTest (Unit Tests), XCUITest (UI Test Otomasyonu), Test-Driven Development (TDD), Mocking/Stubbing protokolleri, Kod Kapsama (Code Coverage).
+* Profiling & Optimizasyon: Xcode Instruments (Time Profiler, Memory Leaks, Allocations, Energy Impact), ARC (Automatic Reference Counting) ve Retain Cycle Çözümlemeleri, Render Hızı ve Main Thread Optimizasyonu.
+* CI/CD, DevOps & Dağıtım: Fastlane (Match, Gym, Scan, Pilot), App Store Connect API, TestFlight Dağıtımı, GitHub Actions, Codemagic, Sentry, Firebase Crashlytics & Analytics, Push Notifications (APNs).
+
+MESLEKİ DENEYİM
+
+Kıdemli iOS / Mobil Geliştirici | Optimus Yazılım
+İstanbul, Türkiye | Mart 2023 – Aralık 2025
+* Kurumsal finans kuruluşları için devreye alma süresini %80 azaltan, modüler Clean Architecture ve MVVM-C tabanlı White Label Fintech iOS uygulamasının native çekirdek mimarisini kurdum ve yönettim.
+* Foreks, iDeal ve Matrix gibi veri sağlayıcılarından gelen yüksek frekanslı borsa emir/derinlik verilerini minimum gecikmeyle işlemek için URLSessionWebSocketTask ve Combine tabanlı gerçek zamanlı veri akış altyapısını geliştirdim; TradingView SDK entegrasyonunu tamamladım.
+* Üçüncü taraf kurumsal mobil uygulamalara güvenli TOTP doğrulama yeteneği kazandıran, sıfır dış bağımlılığa sahip, kapalı kaynaklı native Swift .xcframework SDK'sını geliştirdim ve SPM/CocoaPods üzerinden dağıtımını sağladım.
+* Aksis Axonboard entegrasyonlu White Label RKYC (Uzaktan Müşteri Edinimi) native iOS modülünü geliştirdim; kamera tabanlı kimlik tarama, NFC çip okuma ve liveness testlerini yerel iOS API'leri ile optimize ederek SDK formatında sundum.
+* Bağımsız sızma testleri (Pentest) sonrası tespit edilen açıkları; Security.framework ve Keychain sarmalayıcıları, CryptoKit tabanlı AES şifreleme ve URLSessionDelegate üzerinden dinamik SSL Pinning uygulayarak 0 kritik bulgu seviyesine indirdim.
+* Fastlane entegrasyonu ile TestFlight dağıtımını, sertifika yönetimini (match) ve XCTest otomasyonunu uçtan uca otomatikleştirerek release döngülerini haftalıktan günlük baza indirdim.
+
+Mobil Geliştirici & iOS Mentor | İstanbul Ticaret Odası - SoftITO Yazılım Akademisi
+İstanbul, Türkiye | Mart 2023 – Nisan 2023
+* 36 mühendislik öğrencisine mobil uygulama geliştirme pratikleri, Clean Architecture, iOS platform prensipleri, durum yönetimi ve Git-Flow standartları üzerine yoğun bootcamp eğitimi verdim.
+* Öğrencilerin bitirme projelerinde test edilebilirlik, dependency injection, Instruments ile bellek sızıntısı tespiti ve App Store Connect yayınlama gereksinimleri süreçlerine mentorluk yaptım.
+
+Mobil / iOS Geliştirici | Fimka IT A.Ş.
+İstanbul, Türkiye | Mart 2021 – Mart 2023
+* E-Ticaret ekosisteminde 50.000+ aktif kullanıcıya hizmet veren yüksek trafikli B2B/B2C Müşteri ve gerçek zamanlı depo/sipariş yönetim uygulamalarının iOS istemcilerini geliştirdim ve ölçeklendirdim.
+* UIKit ve Auto Layout / SwiftUI bileşenleri ile karmaşık tasarım sistemlerini pixel-perfect ve 60 FPS akıcılıkta hayata geçirdim; Instruments kullanarak gereksiz yeniden çizimleri (overdraw) ve bellek tüketimini minimize ettim.
+* Native ödeme geçitleri (Payment Gateways), APNs arka plan bildirimleri ve derin bağlantı (Universal Links) altyapılarını entegre ettim; iOS 14+ IDFA/ATT (App Tracking Transparency) uyumluluklarını tamamladım.
+* Ağ istekleri, cache yönetimi ve yerel veri saklama katmanlarında CoreData ve Keychain mimarisini kurarak çevrimdışı çalışma (offline-first) deneyimini sağladım.
+
+Teknoloji Eğitmeni | Deneyap Türkiye
+İstanbul, Türkiye | Nisan 2020 – Mayıs 2024
+* Geleceğin teknoloji üreticilerine mobil uygulama geliştirme mantığı, algoritmik düşünme ve modern yazılım yaşam döngüsü prensiplerini aktardım; proje takımlarını yarışmalara hazırladım.
+
+Freelance iOS & Mobil Uygulama Geliştirici | Global & Yerel Projeler
+2019 – Günümüz
+* Kurumsal & Akıllı Şehir: Şişli ve Karşıyaka Belediyeleri için toplu taşıma takip projelerinde iOS harita ve gerçek zamanlı konum servisleri (CoreLocation, MapKit) entegrasyonlarını gerçekleştirdim; el terminali ve barkod okuma odaklı ERP istemcilerini geliştirdim.
+* Tüketici Odaklı Ürünler: Take Taxi (CoreLocation tabanlı taksi çağırma), Hesap Lütfen (QR menü ve yerel ödeme platformu), Falve ve Linqi App (dil öğrenme platformu) uygulamalarının iOS mimarisini, In-App Purchase (StoreKit) altyapısını ve App Store yayınlama süreçlerini baştan sona yönettim.
+
+EĞİTİM
+* Yönetim Bilişim Sistemleri Lisans Derecesi | Anadolu Üniversitesi
+* Bilgisayar Programcılığı Önlisans Derecesi | Çanakkale Onsekiz Mart Üniversitesi | GANO: 3.12
+* İngilizce Hazırlık Sınıfı | Çanakkale Onsekiz Mart Üniversitesi | 2015 – 2016
+
+DİLLER
+* Türkçe: Anadil
+* İngilizce: Profesyonel Çalışma Yetkinliği (Teknik dokümantasyon, mimari tasarım ve uluslararası ekiplerde çalışma seviyesi)
